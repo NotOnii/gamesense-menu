@@ -254,10 +254,28 @@ static void buildMenu() {
 }
 
 // ---------------------------------------------------------------- app
+static bool capturing = false;
+// test branch: triangle pointer (tip, +12,+12, +3,+15), fill 25,25,25 with a 1px white outline
+static void drawCursor(int mx, int my) {
+    float x = (float)mx, y = (float)my; D3DCOLOR f = fa(rgb(25, 25, 25)), o = fa(rgb(255, 255, 255));
+    Vtx t[3] = {{x, y, 0, f, 0, 0}, {x + 12, y + 12, 0, f, 0, 0}, {x + 3, y + 15, 0, f, 0, 0}};
+    Vtx l[4] = {{x, y, 0, o, 0, 0}, {x + 12, y + 12, 0, o, 0, 0}, {x + 3, y + 15, 0, o, 0, 0}, {x, y, 0, o, 0, 0}};
+    dev->SetTexture(0, nullptr);
+    dev->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG2);
+    dev->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG2);
+    dev->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 1, t, sizeof(Vtx));
+    dev->DrawPrimitiveUP(D3DPT_LINESTRIP, 3, l, sizeof(Vtx));
+}
+static bool cursorInClient() {
+    if (capturing) return true;  // replayed events: draw at the last replayed position
+    POINT p; RECT r; GetCursorPos(&p); ScreenToClient(menu.hwnd, &p); GetClientRect(menu.hwnd, &r);
+    return PtInRect(&r, p);
+}
 static void render() {
     dev->Clear(0, nullptr, D3DCLEAR_TARGET, 0xff000000, 1, 0);
     dev->BeginScene();
     menu.render();
+    if ((menu.status & 1) && cursorInClient()) drawCursor(menu.mouse.x, menu.mouse.y);
     dev->EndScene();
 }
 // GS_EVENTS="down:x,y;up:x,y;rdown:x,y;rup:x,y;move:x,y;key:vk;wheel:x,y,delta[,ctrl]" - replay input through the menu before --capture
@@ -325,11 +343,13 @@ static LRESULT CALLBACK wndProc(HWND h, UINT m, WPARAM w, LPARAM l) {
     if (m == WM_SIZE && w != SIZE_MINIMIZED) { pendW = LOWORD(l); pendH = HIWORD(l); return 0; }
     if (m == WM_DESTROY) { PostQuitMessage(0); return 0; }
     if (m == WM_KEYDOWN && w == VK_INSERT) { menu.toggle(); return 0; }
+    if (m == WM_SETCURSOR && LOWORD(l) == HTCLIENT) { SetCursor((menu.status & 1) ? nullptr : LoadCursor(nullptr, IDC_ARROW)); return TRUE; }  // menu draws its own
     if (menu.handle({m, w, l})) return 0;
     return DefWindowProcW(h, m, w, l);
 }
 int main(int argc, char** argv) {
     const char* capture = (argc > 2 && !strcmp(argv[1], "--capture")) ? argv[2] : nullptr;
+    capturing = capture != nullptr;
     SetProcessDPIAware();
     CoInitialize(nullptr);
     WNDCLASSW wc = {0, wndProc, 0, 0, GetModuleHandleW(nullptr), nullptr, LoadCursor(nullptr, IDC_ARROW), nullptr, nullptr, L"gsmenu"};
