@@ -255,16 +255,34 @@ static void buildMenu() {
 
 // ---------------------------------------------------------------- app
 static bool capturing = false;
-// test branch: triangle pointer (tip, +12,+12, +3,+15), fill 25,25,25 with a 1px white outline
+// test branch: pixel-art pointer in the menu accent colour, hard black shadow at +1,+1
+static const char* CURSOR[] = {
+    "o",
+    "oo",
+    "ooo",
+    "oooo",
+    "ooooo",
+    "oooooo",
+    "ooooooo",
+    "oooooooo",
+    "oooooooo",
+    "oooooo",
+    "oooooo",
+    "o   oo",
+    "     oo",
+    "      o",
+};
+static void drawCursorPass(int x, int y, D3DCOLOR c) {  // one rect per horizontal run
+    for (int r = 0; r < (int)(sizeof CURSOR / sizeof *CURSOR); r++)
+        for (int i = 0, n = (int)strlen(CURSOR[r]); i < n;) {
+            if (CURSOR[r][i] != 'o') { i++; continue; }
+            int j = i; while (j < n && CURSOR[r][j] == 'o') j++;
+            rect(x + i, y + r, j - i, 1, c); i = j;
+        }
+}
 static void drawCursor(int mx, int my) {
-    float x = (float)mx, y = (float)my; D3DCOLOR f = fa(rgb(25, 25, 25)), o = fa(rgb(255, 255, 255));
-    Vtx t[3] = {{x, y, 0, f, 0, 0}, {x + 12, y + 12, 0, f, 0, 0}, {x + 3, y + 15, 0, f, 0, 0}};
-    Vtx l[4] = {{x, y, 0, o, 0, 0}, {x + 12, y + 12, 0, o, 0, 0}, {x + 3, y + 15, 0, o, 0, 0}, {x, y, 0, o, 0, 0}};
-    dev->SetTexture(0, nullptr);
-    dev->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG2);
-    dev->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG2);
-    dev->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 1, t, sizeof(Vtx));
-    dev->DrawPrimitiveUP(D3DPT_LINESTRIP, 3, l, sizeof(Vtx));
+    drawCursorPass(mx + 1, my + 1, rgb(0, 0, 0));
+    drawCursorPass(mx, my, menuColor());
 }
 static bool cursorInClient() {
     if (capturing) return true;  // replayed events: draw at the last replayed position
