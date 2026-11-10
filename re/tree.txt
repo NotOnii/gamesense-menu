@@ -1,0 +1,477 @@
+
+=== TAB o2 "RAGE"
+
+  -- CHILD o3 "Weapon type" rect=0xff000c00 a4=0x1 a5=0x0
+    Custom_4336d9ef o4 "Weapon type" v=undefined
+
+  -- CHILD o5 "Aimbot" rect=0x18000c00 a4=0x18 a5=0x1
+    Checkbox o6 "Enabled" v=23060ec5
+    Hotkey o7 "" v=861e7f9a
+    Combo o8 "Target selection" v=65e86322 items=[["Highest damage",2],["Cycle",0],["Cycle (2x)",3],["Near crosshair",1],["Best hit chance",6]]
+    Multi o9 "Target hitbox" v=5b900854 items=[["Head",2],["Chest",4],["Stomach",8],["Arms",48],["Legs",192],["Feet",512]] CB=0x433cee44(o2)
+    Multi o10 "Multi-point" v=bfabb4a0 items=[["Head",2],["Chest",4],["Stomach",8],["Arms",48],["Legs",192],["Feet",512]] from=o9 CB=0x43348202(o2)
+    Hotkey o11 "" v=29e2c8ed
+    Slider o12 "Multi-point scale" v=a25029ba [24,100] unit="%"  a5=1 tips=[[24,"Auto"]] VIS=0
+    Slider o13 "Minimum hit chance" v=3f5e5553 [0,100] unit="%"  a5=1 tips=[[0,"Off"]]
+    Slider?43480054 o14 "Minimum damage" v=18c0e6be
+    Checkbox o15 "Minimum damage override" v=b80303b4
+    Hotkey o16 "" v=7eb3a142
+    Slider?43480054 o17 "" v=7dc413fe VIS=0
+    Checkbox o18 "Prefer safe point" v=f5a00b3b
+    Label o19 "Force safe point" v=undefined
+    Hotkey o20 "" v=333c1dbe
+    Multi o21 "Avoid unsafe hitboxes" v=ecbbd134 items=[["Head",2],["Chest",4],["Stomach",8],["Arms",48],["Legs",192],["Feet",512]] from=o9
+    Checkbox o22 "Prefer body aim" v=2b54548d VIS=0
+    Multi o23 "Prefer body aim disablers" v=16c91a85 items=[["Low inaccuracy",1],["Target shot fired",2],["Target resolved",4],["Safe point headshot",8]] VIS=0
+    Label o24 "Force body aim" v=undefined
+    Hotkey o25 "" v=2f59674
+    Checkbox o26 "Force body aim on peek" v=9bbd48ea
+    Checkbox o27 "Quick stop" v=c06fd8cc
+    Hotkey o28 "" v=1ac79342
+    Multi o29 "" v=11195ad9 items=[["Early",1],["Slow motion",4],["Duck",2],["Fake duck",32],["Move between shots",8],["Ignore molotov",16],["Taser",64],["Jump scout",128]] VIS=0
+    Checkbox o30 "Double tap" v=889939f
+    Hotkey o31 "" v=67c9986d
+    Combo o32 "" v=31e2d7dd items=[["Offensive",0],["Defensive",1]] VIS=0
+    Slider o33 "Double tap hit chance" v=3f69c17c [0,100] unit="%"  a5=1 VIS=0
+    Slider o34 "Double tap fake lag limit" v=2b56e048 [1,10] unit=""  VIS=0
+    Multi o35 "Double tap quick stop" v=9fbdd0e6 items=[["Slow motion",4],["Duck",2],["Move between shots",8]] VIS=0
+    Checkbox o36 "Automatic scope" v=9e2b2e76
+
+  -- CHILD o37 "Other" rect=0x18000c0c a4=0x8 a5=0x1
+    Combo o38 "Accuracy boost" v=4346edb5 items=[["Low",1],["Medium",3],["High",2],["Maximum",4]]
+    Checkbox o39 "Anti-aim correction" v=a4d31376
+    Checkbox o40 "Automatic fire" v=59bd212a
+    Checkbox o41 "Automatic penetration" v=64715c40
+    Checkbox o42 "Silent aim" v=86bfe317
+    Checkbox o43 "Remove recoil" v=63660060
+    Checkbox o44 "Delay shot" v=a09c0d52
+    Checkbox o45 "Quick peek assist" v=141c9037
+    Hotkey o46 "" v=ec178029
+    Multi o47 "Quick peek assist mode" v=4f67fc33 items=[["Retreat on shot",1],["Retreat on key release",2]] VIS=0
+    Color o48 "" v=c9fcbe4b VIS=0
+    Slider o49 "Quick peek assist distance" v=4cb8e4aa [16,201] unit="in"  a5=1 tips=[[201,"∞"]] VIS=0
+    Label o50 "Duck peek assist" v=undefined
+    Hotkey o51 "" v=d23ed2a7
+    Checkbox o52 "Reduce aim step" v=4034958c
+    Slider o53 "Reduce aim step limit" v=20e889de [2,29] unit="°"  a5=1 VIS=0
+    Slider o54 "Maximum FOV" v=d6d22a5a [1,180] unit="°"  a5=1
+    Checkbox o55 "Log misses due to spread" v=e82be8dd
+    Multi o56 "Low FPS mitigations" v=2b385dc7 items=[["Force low accuracy boost",1],["Disable multipoint: feet",2],["Disable multipoint: arms",4],["Disable multipoint: legs",8],["Disable hitbox: feet",16],["Lower hit chance precision",64],["Limit targets per tick",128]]
+
+=== TAB o57 "AA"
+
+  -- CHILD o58 "Anti-aimbot angles" rect=0x18000c00 a4=0xa a5=0x1
+    Checkbox o59 "Enabled" v=96c0ef29
+    Combo o60 "Pitch" v=6d5f1172 items=[["Off",0],["Default",1],["Up",5],["Down",2],["Minimal",3],["Random",4],["Custom",6]] CB=0x433cf43f(o57)
+    Slider o61 "" v=1de265e [-89,89] unit="°"  a5=1 VIS=0
+    Combo o62 "Yaw base" v=1d43759b items=[["Local view",0],["At targets",1]]
+    Combo o63 "Yaw" v=f2d408f3 items=[["Off",0],["180",1],["Spin",3],["Static",5],["180 Z",2],["Crosshair",4]] CB=0x433cc833(o57)
+    Slider o64 "" v=fe49974d [-180,180] unit="°"  a5=1 VIS=0
+    Combo o65 "Yaw jitter" v=177d7470 items=[["Off",0],["Offset",1],["Center",2],["Random",3],["Skitter",4]] VIS=0 CB=0x433598f4(o57)
+    Slider o66 "" v=dca4b692 [-180,180] unit="°"  a5=1 VIS=0
+    Combo o67 "Body yaw" v=4d6d88c6 items=[["Off",0],["Opposite",1],["Jitter",2],["Static",3]] CB=0x433c65cc(o57)
+    Slider o68 "" v=8dfd54bd [-180,180] unit="°"  a5=1 VIS=0
+    Checkbox o69 "Freestanding body yaw" v=2716923f VIS=0
+    Checkbox o70 "Edge yaw" v=8c526c4f
+    Checkbox o71 "Freestanding" v=86c04dc4
+    Hotkey o72 "" v=697e8050
+    Slider o73 "Roll" v=a1dfc38d [-45,45] unit="°"  a5=1
+
+  -- CHILD o74 "Fake lag" rect=0xc000c0c a4=0xd a5=0x1
+    Checkbox o75 "Enabled" v=f9bbec7b
+    Hotkey o76 "" v=27d21bd4
+    Combo o77 "Amount" v=2a71d5fc items=[["Dynamic",0],["Maximum",2],["Fluctuate",3]]
+    Slider o78 "Variance" v=ca9768e6 [0,100] unit="%"  a5=1
+    Slider o79 "Limit" v=f17fef11 [1,15] unit="" 
+
+  -- CHILD o80 "Other" rect=0xc0c0c0c a4=0xd a5=0x1
+    Checkbox o81 "Slow motion" v=4df394ff
+    Hotkey o82 "" v=7293de2a
+    Combo o83 "Leg movement" v=8f8a4366 items=[["Off",0],["Always slide",1],["Never slide",2]]
+    Checkbox o84 "On shot anti-aim" v=b2467427
+    Hotkey o85 "" v=8f4f3c91
+    Checkbox o86 "Fake peek" v=8494fc0d
+    Hotkey o87 "" v=ae772257
+
+=== TAB o88 "LEGIT" DC=[["433cf58b","43489344",[]]]
+
+  -- CHILD o89 "Weapon type" rect=0xff001800 a4=0x0 a5=0x1
+    Custom_433231ca o90 "Weapon type" v=undefined CB=0x433e0a18(o88)
+
+  -- CHILD o91 "Aimbot" rect=0x18000c00 a4=0xe a5=0x1
+    Checkbox o92 "Enabled" v=bb660a3
+    Hotkey o93 "" v=a31ae814 CB=0x4336ed87(o88)
+    Slider o94 "Speed" v=9d9e24b1 [0,700] unit="" step=1008981770
+    Slider o95 "Speed (in attack)" v=c68ac43e [0,700] unit="" step=1008981770
+    Slider o96 "Speed scale - FOV" v=f7648818 [1,100] unit="%"  a5=1
+    Slider o97 "Maximum lock-on time" v=8946733c [1,1001] unit="ms"  tips=[[1001,"∞"]]
+    Slider o98 "Reaction time" v=836dbf4b [0,200] unit="ms"  a5=1
+    Slider o99 "Maximum FOV" v=1435b790 [1,900] unit="°" step=1036831949
+    Label o100 "Recoil compensation (P/Y)" v=undefined
+    Slider o101 "" v=a2fbfac6 [0,125] unit="%"  a5=1
+    Slider o102 "" v=1716ead7 [0,100] unit="%"  a5=1
+    Checkbox o103 "Quick stop" v=e9197e9c
+    Checkbox o104 "Aim through smoke" v=e7b78410
+    Checkbox o105 "Aim while blind" v=afd7d6d3
+    Checkbox o106 "Head" v=b9327935
+    Checkbox o107 "Chest" v=6ecf9c72
+    Checkbox o108 "Stomach" v=771c5252
+    Slider o109 "First shot delay range" v=a09c5083 [0,64] unit="in"  a5=1 tips=[[0,"Off"]] VIS=0
+
+  -- CHILD o110 "Triggerbot" rect=0x10000c0c a4=0xc a5=0x1
+    Checkbox o111 "Enabled" v=ee182bda
+    Hotkey o112 "" v=a53dc8b7
+    Slider o113 "Minimum hit chance" v=5bdb158d [0,100] unit="%"  a5=1
+    Slider o114 "Reaction time" v=6cea053a [0,200] unit="ms"  a5=1 CB=0x4336b6eb(o88)
+    Checkbox o115 "Burst fire" v=d1dc4d24
+    Slider o116 "" v=5bc951e6 [1,500] unit="ms"  a5=1 VIS=0
+    Slider o117 "Minimum damage" v=47a24717 [1,100] unit="" 
+    Checkbox o118 "Automatic penetration" v=6d349307
+    Checkbox o119 "Shoot through smoke" v=b870359f
+    Checkbox o120 "Shoot while blind" v=6fdb5a10
+    Checkbox o121 "Head" v=be6224c0
+    Checkbox o122 "Chest" v=c8e339f1
+    Checkbox o123 "Stomach" v=cfcee7e5
+
+  -- CHILD o124 "Other" rect=0x8100c0c a4=0x0 a5=0x1
+    Combo o125 "Accuracy boost" v=fde7159f items=[["Off",0],["Low",1],["High",2]] CB=0x433b7738(o88)
+    Slider o126 "Accuracy boost range" v=2d41a289 [1,64] unit="in"  a5=1 tips=[[64,"∞"]] VIS=0
+    Checkbox o127 "Standalone recoil compensation" v=2be03f3a
+
+=== TAB o128 "VISUALS" DC=[["43407c86","43489abc",["0x0"]],["433fb6b1","43489c09",["0x0"]],["4337cacf","43489cf5",["0x0"]],["433ab16b","43489e2d",["0x0"]],["433ce8ba","43489f49",["0x0"]],["433e520a","4348a059",["0x0"]],["433f9c51","4348a149",["0x0"]],["433a121b","4348a239",["0x0"]],["4334d372","4348aba9",["o237"]]]
+
+  -- CHILD o129 "Player ESP" rect=0xd000c00 a4=0x11 a5=0x1
+    Label o130 "Activation type" v=undefined
+    Hotkey o131 "" v=4700a298
+    Checkbox o132 "Teammates" v=45d9d2ac
+    Checkbox o133 "Dormant" v=c410c5d3
+    Checkbox o134 "Bounding box" v=cff9ebad
+    Color o135 "" v=4d243e0d
+    Checkbox o136 "Health bar" v=49733d3c
+    Checkbox o137 "Name" v=a1c152a1
+    Color o138 "" v=25feb6c1
+    Checkbox o139 "Flags" v=84a8b33
+    Checkbox o140 "Weapon text" v=bb3fdf6a
+    Checkbox o141 "Weapon icon" v=6a874b2c
+    Color o142 "" v=f64778
+    Checkbox o143 "Ammo" v=43f02f68
+    Color o144 "" v=8bec37f4
+    Checkbox o145 "Distance" v=f6d81d5
+    Checkbox o146 "Glow" v=b1d008b7
+    Color o147 "" v=ece872cb
+    Checkbox o148 "Hit marker" v=9c345dfa
+    Checkbox o149 "Hit marker sound" v=69c9d9f2
+    Checkbox o150 "Visualize aimbot" v=535095f5
+    Color o151 "" v=7451e155
+    Checkbox o152 "Visualize aimbot (safe point)" v=e9cc8b95
+    Color o153 "" v=e20f6035
+    Checkbox o154 "Visualize sounds" v=e8d2a207
+    Color o155 "" v=7e3b4c1b
+    Checkbox o156 "Line of sight" v=1de914e6
+    Color o157 "" v=745efa1e
+    Checkbox o158 "Money" v=53970838
+    Checkbox o159 "Skeleton" v=523e4b35
+    Color o160 "" v=e995f95
+    Checkbox o161 "Out of FOV arrow" v=95a660ab CB=0x4335bd4d(o128)
+    Color o162 "" v=7d18a71f
+    Slider o163 "" v=4564bfc7 [1,30] unit="px"  a5=1 VIS=0
+    Slider o164 "" v=9cbedae [1,100] unit="%"  a5=1 VIS=0
+
+  -- CHILD o165 "Colored models" rect=0xb0d0c00 a4=0x10 a5=0x1
+    Checkbox o166 "Player" v=c51e0d3d CB=0x4339f7c4(o128)
+    Color o167 "" v=fe06341d
+    Checkbox o168 "Player behind wall" v=f6b67de5 CB=0x4339f7c4(o128)
+    Color o169 "" v=d4699245
+    Combo o170 "" v=44f7095 items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4339458b(o128)
+    Color o171 "" v=9ff240e4
+    Checkbox o172 "Teammate" v=1570af7c CB=0x433866ac(o128)
+    Color o173 "" v=2cefc91c
+    Checkbox o174 "Teammate behind wall" v=57bf65ec CB=0x433866ac(o128)
+    Color o175 "" v=4ad8938
+    Combo o176 "" v=e85380fa items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4340c76d(o128)
+    Color o177 "" v=f3d8f0d1
+    Checkbox o178 "Local player" v=6670db4d CB=0x433c9ed5(o128)
+    Color o179 "" v=9201e7ed
+    Combo o180 "" v=3b28b0e5 items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4336ed23(o128)
+    Color o181 "" v=9436ecb4
+    Multi o182 "Local player transparency" v=3ea36c3a items=[["Grenade",1],["Scoped",2]]
+    Checkbox o183 "Local player fake" v=96db2e1c CB=0x433ed36d(o128)
+    Color o184 "" v=a98ceae8
+    Combo o185 "" v=3fc208c1 items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4334831e(o128)
+    Color o186 "" v=f50a4300
+    Checkbox o187 "On shot" v=5e0e2558 CB=0x4340120e(o128)
+    Color o188 "" v=c2dbf0a4
+    Combo o189 "" v=17c5b91a items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x433c0709(o128)
+    Color o190 "" v=8b122392
+    Slider o191 "" v=1a07b48f [2,100] unit="s" step=1036831949
+    Checkbox o192 "Ragdolls" v=8ccaf8dc
+    Checkbox o193 "Hands" v=e8407b64 CB=0x433f4c86(o128)
+    Color o194 "" v=5a93f490
+    Combo o195 "" v=b7360ba6 items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4338870d(o128)
+    Color o196 "" v=2926f5de
+    Checkbox o197 "Weapon viewmodel" v=da411d58 CB=0x433f1157(o128)
+    Color o198 "" v=75a868a4
+    Combo o199 "" v=2a1fa11a items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x433c8f5a(o128)
+    Color o200 "" v=1c678b92
+    Checkbox o201 "Weapons" v=92ebad93 CB=0x4334da5a(o128)
+    Color o202 "" v=83be3fa7
+    Combo o203 "" v=118a8443 items=[["Default",0],["Solid",1],["Shaded",2],["Metallic",3],["Glow",4],["Bubble",5],["Original",6]] CB=0x4332f222(o128)
+    Color o204 "" v=6d66c717
+    Checkbox o205 "Disable model occlusion" v=8e0781ae
+    Checkbox o206 "Shadow" v=67f8885c
+    Color o207 "" v=c2140c28
+    Checkbox o208 "Props" v=e217c264
+    Color o209 "" v=84830790
+
+  -- CHILD o210 "Other ESP" rect=0xc000c0c a4=0x9 a5=0x1
+    Checkbox o211 "Radar" v=d7cd1b0b
+    Multi o212 "Dropped weapons" v=6d3d6833 items=[["Icon",1],["Text",2],["Glow",4],["Ammo",8],["Distance",16]]
+    Color o213 "" v=a10dc407
+    Checkbox o214 "Grenades" v=25b4b670
+    Color o215 "" v=b8c2c5bc
+    Checkbox o216 "Inaccuracy overlay" v=edf6c582
+    Color o217 "" v=2b61d25a
+    Checkbox o218 "Recoil overlay" v=78a1b150
+    Checkbox o219 "Crosshair" v=ad37a2eb
+    Checkbox o220 "Bomb" v=f2937e07
+    Color o221 "" v=2ada481b
+    Checkbox o222 "Grenade trajectory" v=dc4c1bb9
+    Color o223 "" v=8428f8f9
+    Label o224 "Grenade trajectory (hit)" v=undefined VIS=0
+    Color o225 "" v=c2611c1f VIS=0
+    Checkbox o226 "Grenade proximity warning" v=85bda341
+    Checkbox o227 "Spectators" v=38623779
+    Checkbox o228 "Penetration reticle" v=1e7432a5
+    Checkbox o229 "Hostages" v=559f78dc
+    Color o230 "" v=a6b878a8
+    Multi o231 "Feature indicators" v=59a226c2 items=[["Force safe point",1],["Force body aim",2],["Ping spike",4],["Double tap",8],["Duck peek assist",16],["Freestanding",32],["On shot anti-aim",64],["Minimum damage override",256]]
+    Checkbox o232 "Shared ESP" v=e533025
+    Hotkey o233 "" v=7174d684
+    Checkbox o234 "Shared ESP with other team" v=6834d5da VIS=0
+    Checkbox o235 "Restrict shared ESP updates" v=cbe162f8 VIS=0
+    Checkbox o236 "Upgrade tablet" v=553d3c3f
+    Checkbox o237 "Danger Zone items" v=89653491 CB=0x433c1019(o128)
+    Checkbox o238 "Drone gun" v=75a591c2
+    Color o239 "" v=db9a269a
+    Checkbox o240 "Blackhawk" v=325af11e
+    Color o241 "" v=174abfd6
+    Checkbox o242 "Drone" v=6e6cdad7
+    Color o243 "" v=f407872b
+    Checkbox o244 "Random case" v=5da3152c
+    Color o245 "" v=82ce178
+    Checkbox o246 "Tool case" v=f2a389d2
+    Color o247 "" v=928c112a
+    Checkbox o248 "Pistol case" v=3b6a149e
+    Color o249 "" v=cee5c756
+    Checkbox o250 "Explosive case" v=a3b423be
+    Color o251 "" v=55436936
+    Checkbox o252 "Heavy weapon case" v=52daaa5d
+    Color o253 "" v=72894f7d
+    Checkbox o254 "Light weapon case" v=81d65d4
+    Color o255 "" v=cf605580
+    Checkbox o256 "Dufflebag" v=d13ffdf6
+    Color o257 "" v=8b5c32ae
+    Checkbox o258 "Jammer" v=6a586832
+    Color o259 "" v=76da764a
+    Checkbox o260 "Ammobox" v=f8774353
+    Color o261 "" v=406a4767
+    Checkbox o262 "Armor" v=ffd5c89d
+    Color o263 "" v=c11b6fbd
+    Checkbox o264 "Parachute pack" v=2802a1f6
+    Color o265 "" v=b424b6ae
+    Checkbox o266 "Briefcase" v=2b4cde08
+    Color o267 "" v=c8555dd4
+    Checkbox o268 "Tablet upgrade zone" v=4fd3f678
+    Color o269 "" v=58386184
+    Checkbox o270 "Tablet upgrade drone" v=42694ace
+    Color o271 "" v=6d6a3c6
+    Checkbox o272 "Cash stack" v=2d915386
+    Color o273 "" v=e5f28dfe
+
+  -- CHILD o274 "Effects" rect=0xc0c0c0c a4=0x9 a5=0x1
+    Checkbox o275 "Remove flashbang effects" v=461d3721
+    Checkbox o276 "Remove smoke grenades" v=623bd4f2
+    Checkbox o277 "Remove fog" v=3359e29c
+    Checkbox o278 "Remove skybox" v=fbd4768d
+    Combo o279 "Visual recoil adjustment" v=70ba27e0 items=[["Off",0],["Remove shake",1],["Remove all",2]]
+    Slider o280 "Transparent walls" v=9b4090d9 [1,100] unit="%"  a5=1
+    Slider o281 "Transparent props" v=8bed781e [1,100] unit="%"  a5=1
+    Combo o282 "Brightness adjustment" v=2e5dd918 items=[["Off",0],["Fullbright",1],["Night mode",2]] CB=0x433efa40(o128)
+    Color o283 "" v=2a0b0df3 VIS=0
+    Checkbox o284 "Remove scope overlay" v=171eed00
+    Checkbox o285 "Instant scope" v=eafcead9
+    Checkbox o286 "Disable post processing" v=a8321370
+    Checkbox o287 "Force third person (alive)" v=d35f8540 CB=0x433ffd9b(o128)
+    Hotkey o288 "" v=3685fce3
+    Checkbox o289 "Force third person (dead)" v=264e3e21 CB=0x434076b5(o128)
+    Checkbox o290 "Disable rendering of teammates" v=4cbb0e86
+    Checkbox o291 "Disable rendering of ragdolls" v=b589f662
+    Checkbox o292 "Bullet tracers" v=3a5285a6
+    Color o293 "" v=635f47de
+    Checkbox o294 "Bullet impacts" v=d54a1cbd
+    Slider o295 "" v=4c044f71 [1,20] unit="s"  a5=1 VIS=0
+    Checkbox o296 "Modulate harmless molotovs" v=c82cbd3b
+    Color o297 "" v=f9200def
+    Slider o298 "" v=921caa0a [0,100] unit="%"  a5=1 VIS=0
+
+=== TAB o299 "MISC"
+
+  -- CHILD o300 "Miscellaneous" rect=0x18000c00 a4=0xd a5=0x1
+    Slider o301 "Override FOV" v=fc225a4f [1,135] unit="°"  a5=1
+    Slider o302 "Override zoom FOV" v=ca80f9ed [0,100] unit="%"  a5=1
+    Checkbox o303 "Knifebot" v=7a5909ee
+    Multi o304 "" v=a7c81d9b items=[["Swing",1],["Full stab",2]] VIS=0
+    Checkbox o305 "Zeusbot" v=2e314ce2
+    Checkbox o306 "Automatic weapons" v=3d5de026
+    Slider o307 "" v=3952aaa6 [0,200] unit="ms"  a5=1 VIS=0
+    Checkbox o308 "Quick switch" v=d634908
+    Checkbox o309 "Reveal competitive ranks" v=30e0cfe7
+    Checkbox o310 "Reveal Overwatch players" v=d351d519
+    Checkbox o311 "Auto-accept matchmaking" v=141f80b7 CB=0x433d2d73(o299)
+    Checkbox o312 "Clan tag spammer" v=9f6c4676
+    Checkbox o313 "Log weapon purchases" v=5086bcf5
+    Checkbox o314 "Log damage dealt" v=ce14f5a
+    Checkbox o315 "Automatic grenade release" v=969eef1f
+    Hotkey o316 "" v=db791db8
+    Slider o317 "Minimum grenade damage" v=510f682d [1,50] unit=""  VIS=0
+    Checkbox o318 "Super toss" v=37a61386
+    Checkbox o319 "Ping spike" v=916f47da CB=0x433f9832(o299)
+    Hotkey o320 "" v=3c4135ff
+    Slider o321 "" v=c5290e81 [1,200] unit="ms"  a5=1 VIS=0
+    Label o322 "Free look" v=undefined
+    Hotkey o323 "" v=77d31850
+    Checkbox o324 "Persistent kill feed" v=245cedb5
+    Label o325 "Last second defuse" v=undefined
+    Hotkey o326 "" v=473cc2de
+    Checkbox o327 "Disable sv_pure" v=177ab88c
+    Checkbox o328 "Rebuy fix" v=6ed248e1
+    Checkbox o329 "Draw console output" v=52eadf91
+    Button o330 "Steal player name" v=undefined
+    Button o331 "Dump MM wins" v=undefined
+
+  -- CHILD o332 "Movement" rect=0xc000c0c a4=0xd a5=0x1
+    Checkbox o333 "Standalone quick stop" v=4cd278ca
+    Checkbox o334 "Infinite duck" v=d0ca5b87
+    Checkbox o335 "Easy strafe" v=db2172a1
+    Checkbox o336 "Bunny hop" v=fe3fdaab
+    Checkbox o337 "Air strafe" v=f2eb89e9 CB=0x4336e86c(o299)
+    Multi o338 "Air strafe direction" v=6f6acc9b items=[["View angles",1],["Movement keys",2]] VIS=0
+    Slider o339 "Air strafe smoothing" v=c94c5f0b [0,100] unit="%"  a5=1 VIS=0
+    Checkbox o340 "Avoid collisions" v=3095c574 VIS=0
+    Checkbox o341 "Z-Hop" v=3fdf2566 VIS=0 CB=0x433afc9f(o299)
+    Hotkey o342 "" v=2b499e77 VIS=0
+    Slider o343 "" v=3027dc11 [100,300] unit="" step=1036831949 VIS=0
+    Slider o344 "" v=3127de82 [100,500] unit="" step=1036831949 VIS=0
+    Checkbox o345 "Pre-speed" v=ca7fc107 VIS=0
+    Hotkey o346 "" v=712c1936 VIS=0
+    Checkbox o347 "No fall damage" v=8e38f1f3
+    Color o348 "" v=6e4e5cc7
+    Combo o349 "Air duck" v=5b1a5c7f items=[["Off",0],["On",1],["Spam",3],["Fake",2],["On land",4]]
+    Checkbox o350 "Blockbot" v=b2cdbb7d
+    Hotkey o351 "" v=e2ffccf0
+    Checkbox o352 "Jump at edge" v=8c13c109
+    Hotkey o353 "" v=5bbb224e
+    Checkbox o354 "Fast walk" v=b5e64ad1
+
+  -- CHILD o355 "Settings" rect=0xc0c0c0c a4=0x8 a5=0x1
+    Label o356 "Menu key" v=undefined
+    Hotkey o357 "" v=0x43478db8
+    Label o358 "Menu color" v=undefined
+    Color o359 "" v=0x43468fb0
+    Combo o360 "DPI scale" v=0x43475a94 items=[["100%",0],["125%",1],["150%",2],["175%",3],["200%",4]] CB=0x43397071(o299)
+    Checkbox o361 "Anti-untrusted" v=851e6abe
+    Checkbox o362 "Allow custom game events" v=526a2bf4 VIS=0 CB=0x43381798(o299)
+    Checkbox o364 "Hide from OBS" v=643364e6
+    Checkbox o365 "Low FPS warning" v=740c32ae
+    Checkbox o366 "Lock menu layout" v=0x43467e4b CB=0x433ed774(o299)
+    Checkbox o367 "Multithreading" v=0x434683fc VIS=0
+    Button o368 "Reset menu layout" v=undefined
+    Button o369 "Unload" v=undefined
+    Slider o370 "sv_maxunlag2" v=0x43468230 [200,1000] unit="ms"  a5=1 VIS=0 CB=0x433cce8e(o299)
+    Slider o371 "sv_maxusrcmdprocessticks2" v=0x43469274 [4,62] unit=""  VIS=0 CB=0x433ab605(o299)
+    Slider o372 "sv_clockcorrection_msecs2" v=0x43468290 [0,1000] unit="ms"  a5=1 VIS=0
+    Checkbox o373 "sv_maxusrcmdprocessticks_holdaim" v=0x43468d7c VIS=0
+    Checkbox o374 "Fix viewmodel lag" v=0x4346a328 VIS=0
+    Checkbox o375 "Fix networking" v=0x43467cc0 VIS=0
+    Checkbox o376 "Fix animations" v=0x4346a527 VIS=0
+    Checkbox o377 "Faster grenade toss" v=0x43467560 VIS=0
+
+=== TAB o378 "SKINS" DC=[["433cd70e","4348d3f6",[]]]
+
+  -- CHILD o379 "Model options" rect=0x18000c00 a4=0x0 a5=0x0
+    Slider o380 "Team" v=o378+0xe4 [2,3] unit=""  VIS=0 CB=0x433eb2c8(o378)
+    Checkbox o381 "Knife changer" v=d347bc87 CB=0x4335ca65(o378)
+    Combo o382 "" v=e0bda969 items=[["Bayonet",0],["Flip",1],["Gut",2],["Karambit",3],["M9 Bayonet",4],["Tactical",5],["Butterfly",6],["Falchion",7],["Shadow dagger",8],["Survival bowie",9],["Ursus",10],["Navaja",11],["Stiletto",12],["Talon",13],["Classic knife",14],["Paracord",15],["Survival",16],["Nomad",17],["Skeleton",18]] VIS=0 CB=0x433658fa(o378)
+    Checkbox o383 "Glove changer" v=3a8ef907 CB=0x433d66b5(o378)
+    Combo o384 "" v=7439e8b5 VIS=0 CB=0x4333cea9(o378)
+    Combo o385 "" v=e13f61e0 VIS=0 CB=0x433cce8e(o378)
+    Checkbox o386 "Mask changer" v=de88b6dc
+    Combo o387 "" v=588fc522 items=[["Hoxton",0],["Doll",1],["Samurai",3],["Clown",4],["Wolf",5],["Sheep",6],["Gold bunny",7],["Anaglyph",8],["Japanese",9],["Dallas",10],["Pumpkin",11],["Bloody sheep",12],["Devil",13],["Boar",14],["Chains",15],["Tiki",16],["Bunny",17],["Gold sheep",18],["Zombie",19],["Chicken",20],["Gold skull",21]] VIS=0
+    Checkbox o388 "Agent changer" v=191a5a61 CB=0x43384c8d(o378)
+    Combo o389 "" v=3eb3f20b VIS=0
+    Combo o390 "" v=8191d9bc VIS=0
+
+  -- CHILD o391 "Weapon skin" rect=0x18000c0c a4=0xe a5=0x0
+    Slider o392 "Weapon" v=o378+0xe0 [0,1000] unit=""  VIS=0 CB=0x4332cc0c(o378)
+    Checkbox o393 "Enabled" v=b6218fec CB=0x433e10cc(o378)
+    Checkbox o394 "StatTrak" v=b6218fec
+    Slider o395 "Quality" v=b6218fec [0,100] unit="%"  a5=1
+    Slider o396 "Seed" v=b6218fec [0,1000] unit="" 
+    Checkbox o397 "Filter by weapon" v=9ab5333c CB=0x433fd925(o378)
+    Listbox o398 "Skin" v=undefined CB=0x43406ed3(o378)
+
+=== TAB o399 "PLAYERS"
+
+  -- CHILD o400 "Players" rect=0x18000c00 a4=0x0 a5=0x1
+    Listbox o401 "Player list" v=undefined CB=0x4336b1d5(o399)
+    Button o402 "Reset all" v=undefined
+
+  -- CHILD o403 "Adjustments" rect=0x18000c0c a4=0xd a5=0x1
+    Checkbox o404 "Add to whitelist" v=null
+    Checkbox o405 "Allow shared ESP updates" v=null
+    Checkbox o406 "Disable visuals" v=null
+    Checkbox o407 "High priority" v=null
+    Checkbox o408 "Force pitch" v=null
+    Slider o409 "Force pitch value" v=null [-90,90] unit="°"  VIS=0
+    Checkbox o410 "Force body yaw" v=null
+    Slider o411 "Force body yaw value" v=null [-60,60] unit="°"  VIS=0
+    Checkbox o412 "Correction active" v=null
+    Combo o413 "Override prefer body aim" v=null items=[["-",0],["Off",1],["On",2],["Force",3]]
+    Combo o414 "Override safe point" v=null items=[["-",0],["Off",1],["On",2]]
+    Button o415 "Apply to all" v=undefined
+
+=== TAB o416 "CONFIG" DC=[["4335c747","4348d2ff",[]]]
+
+  -- CHILD o417 "Presets" rect=0x18000c00 a4=0x8 a5=0x1
+    Listbox o418 "Presets" v=undefined CB=0x4332b5a9(o416)
+    Hotkey o419 "" v=null VIS=0
+    Button o420 "Load" v=undefined
+    Button o421 "Save" v=undefined
+    Button o422 "Delete" v=undefined
+    Button o423 "Reset" v=undefined
+    Button o424 "Import from clipboard" v=undefined
+    Button o425 "Export to clipboard" v=undefined
+
+  -- CHILD o426 "Lua" rect=0x18000c0c a4=0x8 a5=
+    Checkbox o427 "Enabled" v=0x434675d4 CB=0x433b3860(o416)
+    Checkbox o428 "Allow unsafe scripts" v=0x43475798 CB=0x43368df4(o416)
+    Button o429 "Reload active scripts" v=undefined
+    Listbox o430 "Scripts" v=undefined CB=0x433e1d52(o416)
+    Label o431 " " v=undefined
+    Checkbox o432 "Load on startup" v=null CB=0x433a0148(o416)
+    Button o433 "Load script" v=undefined VIS=0
+    Button o434 "Unload script" v=undefined VIS=0
+
+=== TAB o435 "Lua" VIS=0
+
+  -- CHILD o436 "A" rect=0x18000c00 a4=0x0 a5=0x1
+
+  -- CHILD o437 "B" rect=0x18000c0c a4=0x0 a5=0x1
+["call","433b8aa6","43487081","ecx=o1+0x54","edx=0x0","0x9"]
+["call","433ef999","43487ff2","ecx=o1+0x68","edx=clob","stk+0xfff5c","?stk:1047820","stk+0xffd38","stk+0xffd34"]
+["call","433f1163","4348a2cc","ecx=stk+0xffd18","edx=clob"]
+["call","433f195c","4348ba50","ecx=stk+0xfff64","edx=clob"]
+["call","4339f3a5","4348bf40","ecx=stk+0xfff64","edx=clob"]
+["call","4331eca4","4348bfe1","ecx=o378+0x138","edx=clob","0x0","stk+0xffd33","stk+0xffd32","stk+0xffd31","stk+0xffd30","stk+0xffd2f","stk+0xffd2e"]
+["call","43484fc2","4348d03d","ecx=o417","edx=clob"]
+["call","NaN","4348d403","ecx=o435","edx=clob"]

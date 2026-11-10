@@ -1,0 +1,8036 @@
+{
+ "items": [
+  {
+   "id": "o2",
+   "kind": "Tab",
+   "size": 216,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x4346ed5c"
+    },
+    "9c": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o22"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o4"
+    },
+    "a0": {
+     "size": 4,
+     "val": "o3"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o6"
+    },
+    "d4": {
+     "size": 4,
+     "val": "o9"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o12"
+    },
+    "b4": {
+     "size": 4,
+     "val": "o13"
+    },
+    "d0": {
+     "size": 4,
+     "val": "o21"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o23"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o29"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o32"
+    },
+    "cc": {
+     "size": 4,
+     "val": "o35"
+    },
+    "a4": {
+     "size": 4,
+     "val": "o5"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o37"
+    }
+   },
+   "events": [],
+   "name": "RAGE",
+   "at": 1128820913,
+   "addedAt": 1128824712
+  },
+  {
+   "id": "o3",
+   "kind": "Child",
+   "size": 200,
+   "fields": {
+    "60": {
+     "size": 4,
+     "val": "0x32"
+    },
+    "64": {
+     "size": 4,
+     "val": "0x32"
+    },
+    "b0": {
+     "size": 2,
+     "val": "0x0"
+    }
+   },
+   "events": [],
+   "tab": "o2",
+   "name": "Weapon type",
+   "rect": "0xff000c00",
+   "a4": "0x1",
+   "a5": "0x0",
+   "at": 1128820983,
+   "children": [
+    "o4"
+   ]
+  },
+  {
+   "id": "o4",
+   "kind": "Custom_4336d9ef",
+   "parent": "o3",
+   "name": "Weapon type",
+   "a": [
+    "o2+0x98"
+   ],
+   "at": 1128821039,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o5",
+   "kind": "Child",
+   "size": 200,
+   "fields": {
+    "b0": {
+     "size": 2,
+     "val": "0x0"
+    }
+   },
+   "events": [],
+   "tab": "o2",
+   "name": "Aimbot",
+   "rect": "0x18000c00",
+   "a4": "0x18",
+   "a5": "0x1",
+   "at": 1128821110,
+   "children": [
+    "o6",
+    "o7",
+    "o8",
+    "o9",
+    "o10",
+    "o11",
+    "o12",
+    "o13",
+    "o14",
+    "o15",
+    "o16",
+    "o17",
+    "o18",
+    "o19",
+    "o20",
+    "o21",
+    "o22",
+    "o23",
+    "o24",
+    "o25",
+    "o26",
+    "o27",
+    "o28",
+    "o29",
+    "o30",
+    "o31",
+    "o32",
+    "o33",
+    "o34",
+    "o35",
+    "o36"
+   ]
+  },
+  {
+   "id": "o6",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Enabled",
+   "v": "23060ec5+10",
+   "at": 1128821163,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o7",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "861e7f9a+0",
+   "at": 1128821187,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o8",
+   "kind": "Combo",
+   "parent": "o5",
+   "name": "Target selection",
+   "v": "65e86322+10",
+   "items": [
+    [
+     "Highest damage",
+     2
+    ],
+    [
+     "Cycle",
+     0
+    ],
+    [
+     "Cycle (2x)",
+     3
+    ],
+    [
+     "Near crosshair",
+     1
+    ],
+    [
+     "Best hit chance",
+     6
+    ]
+   ],
+   "at": 1128821219,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o9",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "Target hitbox",
+   "v": "5b900854+10",
+   "items": [
+    [
+     "Head",
+     2
+    ],
+    [
+     "Chest",
+     4
+    ],
+    [
+     "Stomach",
+     8
+    ],
+    [
+     "Arms",
+     48
+    ],
+    [
+     "Legs",
+     192
+    ],
+    [
+     "Feet",
+     512
+    ]
+   ],
+   "at": 1128821363,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o2",
+     "fn": "0x433cee44"
+    }
+   ]
+  },
+  {
+   "id": "o10",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "Multi-point",
+   "v": "bfabb4a0+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Head",
+     2
+    ],
+    [
+     "Chest",
+     4
+    ],
+    [
+     "Stomach",
+     8
+    ],
+    [
+     "Arms",
+     48
+    ],
+    [
+     "Legs",
+     192
+    ],
+    [
+     "Feet",
+     512
+    ]
+   ],
+   "at": 1128821611,
+   "fields": {},
+   "events": [],
+   "itemsFrom": "o9",
+   "callbacks": [
+    {
+     "ctx": "o2",
+     "fn": "0x43348202"
+    }
+   ]
+  },
+  {
+   "id": "o11",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "29e2c8ed+0",
+   "at": 1128821678,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o12",
+   "kind": "Slider",
+   "parent": "o5",
+   "name": "Multi-point scale",
+   "min": 24,
+   "max": 100,
+   "v": "a25029ba+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128821718,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "tips": [
+    [
+     24,
+     "Auto"
+    ]
+   ]
+  },
+  {
+   "id": "o13",
+   "kind": "Slider",
+   "parent": "o5",
+   "name": "Minimum hit chance",
+   "min": 0,
+   "max": 100,
+   "v": "3f5e5553+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128821816,
+   "fields": {},
+   "events": [],
+   "tips": [
+    [
+     0,
+     "Off"
+    ]
+   ]
+  },
+  {
+   "id": "o14",
+   "kind": "Slider?43480054",
+   "parent": "o5",
+   "name": "Minimum damage",
+   "v": "18c0e6be+10",
+   "at": 1128822070,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o15",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Minimum damage override",
+   "v": "b80303b4+10",
+   "at": 1128822110,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o17+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o16",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "7eb3a142+0",
+   "at": 1128822130,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o17",
+   "kind": "Slider?43480054",
+   "parent": "o5",
+   "name": "",
+   "v": "7dc413fe+10",
+   "at": 1128822156,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o15+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o15:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o18",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Prefer safe point",
+   "v": "f5a00b3b+10",
+   "at": 1128822226,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o19",
+   "kind": "Label",
+   "parent": "o5",
+   "name": "Force safe point",
+   "at": 1128822244,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o20",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "333c1dbe+0",
+   "at": 1128822262,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o21",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "Avoid unsafe hitboxes",
+   "v": "ecbbd134+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Head",
+     2
+    ],
+    [
+     "Chest",
+     4
+    ],
+    [
+     "Stomach",
+     8
+    ],
+    [
+     "Arms",
+     48
+    ],
+    [
+     "Legs",
+     192
+    ],
+    [
+     "Feet",
+     512
+    ]
+   ],
+   "at": 1128822298,
+   "fields": {},
+   "events": [],
+   "itemsFrom": "o9"
+  },
+  {
+   "id": "o22",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Prefer body aim",
+   "v": "2b54548d+10",
+   "at": 1128822353,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o23+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o23",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "Prefer body aim disablers",
+   "v": "16c91a85+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Low inaccuracy",
+     1
+    ],
+    [
+     "Target shot fired",
+     2
+    ],
+    [
+     "Target resolved",
+     4
+    ],
+    [
+     "Safe point headshot",
+     8
+    ]
+   ],
+   "at": 1128822404,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o22+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o22:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o24",
+   "kind": "Label",
+   "parent": "o5",
+   "name": "Force body aim",
+   "at": 1128822572,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o25",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "2f59674+0",
+   "at": 1128822590,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o26",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Force body aim on peek",
+   "v": "9bbd48ea+10",
+   "at": 1128822622,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o27",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Quick stop",
+   "v": "c06fd8cc+10",
+   "at": 1128822654,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o29+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o28",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "1ac79342+0",
+   "at": 1128822674,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o29",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "",
+   "v": "11195ad9+10",
+   "items": [
+    [
+     "Early",
+     1
+    ],
+    [
+     "Slow motion",
+     4
+    ],
+    [
+     "Duck",
+     2
+    ],
+    [
+     "Fake duck",
+     32
+    ],
+    [
+     "Move between shots",
+     8
+    ],
+    [
+     "Ignore molotov",
+     16
+    ],
+    [
+     "Taser",
+     64
+    ],
+    [
+     "Jump scout",
+     128
+    ]
+   ],
+   "at": 1128822704,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o27+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o27:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o30",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Double tap",
+   "v": "889939f+10",
+   "at": 1128823023,
+   "fields": {
+    "50": {
+     "size": 4,
+     "val": "0xbb82f0f0"
+    },
+    "74": {
+     "size": 4,
+     "val": "o35+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o31",
+   "kind": "Hotkey",
+   "parent": "o5",
+   "v": "67c9986d+0",
+   "at": 1128823050,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o32",
+   "kind": "Combo",
+   "parent": "o5",
+   "name": "",
+   "v": "31e2d7dd+10",
+   "items": [
+    [
+     "Offensive",
+     0
+    ],
+    [
+     "Defensive",
+     1
+    ]
+   ],
+   "at": 1128823076,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o33+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o30:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o33",
+   "kind": "Slider",
+   "parent": "o5",
+   "name": "Double tap hit chance",
+   "min": 0,
+   "max": 100,
+   "v": "3f69c17c+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128823234,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o34+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "o32+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o34",
+   "kind": "Slider",
+   "parent": "o5",
+   "name": "Double tap fake lag limit",
+   "min": 1,
+   "max": 10,
+   "v": "2b56e048+10",
+   "unit": 0,
+   "step": 1,
+   "at": 1128823299,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o35+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "o33+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o35",
+   "kind": "Multi",
+   "parent": "o5",
+   "name": "Double tap quick stop",
+   "v": "9fbdd0e6+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Slow motion",
+     4
+    ],
+    [
+     "Duck",
+     2
+    ],
+    [
+     "Move between shots",
+     8
+    ]
+   ],
+   "at": 1128823362,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o30+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "o34+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o36",
+   "kind": "Checkbox",
+   "parent": "o5",
+   "name": "Automatic scope",
+   "v": "9e2b2e76+10",
+   "at": 1128823525,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o37",
+   "kind": "Child",
+   "size": 200,
+   "fields": {
+    "b0": {
+     "size": 2,
+     "val": "0x0"
+    }
+   },
+   "events": [],
+   "tab": "o2",
+   "name": "Other",
+   "rect": "0x18000c0c",
+   "a4": "0x8",
+   "a5": "0x1",
+   "at": 1128823606,
+   "children": [
+    "o38",
+    "o39",
+    "o40",
+    "o41",
+    "o42",
+    "o43",
+    "o44",
+    "o45",
+    "o46",
+    "o47",
+    "o48",
+    "o49",
+    "o50",
+    "o51",
+    "o52",
+    "o53",
+    "o54",
+    "o55",
+    "o56"
+   ]
+  },
+  {
+   "id": "o38",
+   "kind": "Combo",
+   "parent": "o37",
+   "name": "Accuracy boost",
+   "v": "4346edb5+10",
+   "items": [
+    [
+     "Low",
+     1
+    ],
+    [
+     "Medium",
+     3
+    ],
+    [
+     "High",
+     2
+    ],
+    [
+     "Maximum",
+     4
+    ]
+   ],
+   "at": 1128823668,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o39",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Anti-aim correction",
+   "v": "a4d31376+10",
+   "at": 1128823792,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o40",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Automatic fire",
+   "v": "59bd212a+10",
+   "at": 1128823824,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o41",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Automatic penetration",
+   "v": "64715c40+10",
+   "at": 1128823856,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o42",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Silent aim",
+   "v": "86bfe317+10",
+   "at": 1128823888,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o43",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Remove recoil",
+   "v": "63660060+10",
+   "at": 1128823920,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o44",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Delay shot",
+   "v": "a09c0d52+10",
+   "at": 1128823952,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o45",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Quick peek assist",
+   "v": "141c9037+10",
+   "at": 1128823984,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o49+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o46",
+   "kind": "Hotkey",
+   "parent": "o37",
+   "v": "ec178029+0",
+   "at": 1128824004,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o47",
+   "kind": "Multi",
+   "parent": "o37",
+   "name": "Quick peek assist mode",
+   "v": "4f67fc33+10",
+   "items": [
+    [
+     "Retreat on shot",
+     1
+    ],
+    [
+     "Retreat on key release",
+     2
+    ]
+   ],
+   "at": 1128824036,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o48+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o45:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o48",
+   "kind": "Color",
+   "parent": "o37",
+   "v": "c9fcbe4b+10",
+   "at": 1128824142,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o49+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "o47+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o49",
+   "kind": "Slider",
+   "parent": "o37",
+   "name": "Quick peek assist distance",
+   "min": 16,
+   "max": 201,
+   "v": "4cb8e4aa+10",
+   "a5": 1,
+   "unit": 7209065,
+   "step": 1,
+   "at": 1128824217,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o45+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "o48+0x4"
+    }
+   },
+   "events": [],
+   "tips": [
+    [
+     201,
+     "∞"
+    ]
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o50",
+   "kind": "Label",
+   "parent": "o37",
+   "name": "Duck peek assist",
+   "at": 1128824306,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o51",
+   "kind": "Hotkey",
+   "parent": "o37",
+   "v": "d23ed2a7+0",
+   "at": 1128824324,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o52",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Reduce aim step",
+   "v": "4034958c+10",
+   "at": 1128824359,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o53",
+   "kind": "Slider",
+   "parent": "o37",
+   "name": "Reduce aim step limit",
+   "min": 2,
+   "max": 29,
+   "v": "20e889de+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128824402,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o54",
+   "kind": "Slider",
+   "parent": "o37",
+   "name": "Maximum FOV",
+   "min": 1,
+   "max": 180,
+   "v": "d6d22a5a+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128824457,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o55",
+   "kind": "Checkbox",
+   "parent": "o37",
+   "name": "Log misses due to spread",
+   "v": "e82be8dd+10",
+   "at": 1128824489,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o56",
+   "kind": "Multi",
+   "parent": "o37",
+   "name": "Low FPS mitigations",
+   "v": "2b385dc7+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Force low accuracy boost",
+     1
+    ],
+    [
+     "Disable multipoint: feet",
+     2
+    ],
+    [
+     "Disable multipoint: arms",
+     4
+    ],
+    [
+     "Disable multipoint: legs",
+     8
+    ],
+    [
+     "Disable hitbox: feet",
+     16
+    ],
+    [
+     "Lower hit chance precision",
+     64
+    ],
+    [
+     "Limit targets per tick",
+     128
+    ]
+   ],
+   "at": 1128824525,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o57",
+   "kind": "Tab",
+   "size": 212,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x43470094"
+    },
+    "98": {
+     "size": 4,
+     "val": "o58"
+    },
+    "cc": {
+     "size": 4,
+     "val": "varfe49974d+0x10"
+    },
+    "d0": {
+     "size": 4,
+     "val": "var8dfd54bd+0x10"
+    },
+    "a4": {
+     "size": 4,
+     "val": "o60"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o61"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o63"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o64"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o65"
+    },
+    "b4": {
+     "size": 4,
+     "val": "o66"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o68"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o69"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o79"
+    },
+    "9c": {
+     "size": 4,
+     "val": "o74"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o84"
+    },
+    "a0": {
+     "size": 4,
+     "val": "o80"
+    }
+   },
+   "events": [],
+   "name": "AA",
+   "at": 1128824766,
+   "addedAt": 1128826952
+  },
+  {
+   "id": "o58",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o57",
+   "name": "Anti-aimbot angles",
+   "rect": "0x18000c00",
+   "a4": "0xa",
+   "a5": "0x1",
+   "at": 1128824907,
+   "children": [
+    "o59",
+    "o60",
+    "o61",
+    "o62",
+    "o63",
+    "o64",
+    "o65",
+    "o66",
+    "o67",
+    "o68",
+    "o69",
+    "o70",
+    "o71",
+    "o72",
+    "o73"
+   ]
+  },
+  {
+   "id": "o59",
+   "kind": "Checkbox",
+   "parent": "o58",
+   "name": "Enabled",
+   "v": "96c0ef29+10",
+   "at": 1128824953,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o60",
+   "kind": "Combo",
+   "parent": "o58",
+   "name": "Pitch",
+   "v": "6d5f1172+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Default",
+     1
+    ],
+    [
+     "Up",
+     5
+    ],
+    [
+     "Down",
+     2
+    ],
+    [
+     "Minimal",
+     3
+    ],
+    [
+     "Random",
+     4
+    ],
+    [
+     "Custom",
+     6
+    ]
+   ],
+   "at": 1128824985,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o57",
+     "fn": "0x433cf43f"
+    }
+   ]
+  },
+  {
+   "id": "o61",
+   "kind": "Slider",
+   "parent": "o58",
+   "name": "",
+   "min": -89,
+   "max": 89,
+   "v": "1de265e+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128825215,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o62",
+   "kind": "Combo",
+   "parent": "o58",
+   "name": "Yaw base",
+   "v": "1d43759b+10",
+   "items": [
+    [
+     "Local view",
+     0
+    ],
+    [
+     "At targets",
+     1
+    ]
+   ],
+   "at": 1128825265,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o63",
+   "kind": "Combo",
+   "parent": "o58",
+   "name": "Yaw",
+   "v": "f2d408f3+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "180",
+     1
+    ],
+    [
+     "Spin",
+     3
+    ],
+    [
+     "Static",
+     5
+    ],
+    [
+     "180 Z",
+     2
+    ],
+    [
+     "Crosshair",
+     4
+    ]
+   ],
+   "at": 1128825338,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o57",
+     "fn": "0x433cc833"
+    }
+   ]
+  },
+  {
+   "id": "o64",
+   "kind": "Slider",
+   "parent": "o58",
+   "name": "",
+   "min": -180,
+   "max": 180,
+   "v": "fe49974d+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128825556,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o65",
+   "kind": "Combo",
+   "parent": "o58",
+   "name": "Yaw jitter",
+   "v": "177d7470+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Offset",
+     1
+    ],
+    [
+     "Center",
+     2
+    ],
+    [
+     "Random",
+     3
+    ],
+    [
+     "Skitter",
+     4
+    ]
+   ],
+   "at": 1128825602,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "callbacks": [
+    {
+     "ctx": "o57",
+     "fn": "0x433598f4"
+    }
+   ]
+  },
+  {
+   "id": "o66",
+   "kind": "Slider",
+   "parent": "o58",
+   "name": "",
+   "min": -180,
+   "max": 180,
+   "v": "dca4b692+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128825843,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o67",
+   "kind": "Combo",
+   "parent": "o58",
+   "name": "Body yaw",
+   "v": "4d6d88c6+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Opposite",
+     1
+    ],
+    [
+     "Jitter",
+     2
+    ],
+    [
+     "Static",
+     3
+    ]
+   ],
+   "at": 1128825889,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o57",
+     "fn": "0x433c65cc"
+    }
+   ]
+  },
+  {
+   "id": "o68",
+   "kind": "Slider",
+   "parent": "o58",
+   "name": "",
+   "min": -180,
+   "max": 180,
+   "v": "8dfd54bd+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128826057,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o69",
+   "kind": "Checkbox",
+   "parent": "o58",
+   "name": "Freestanding body yaw",
+   "v": "2716923f+10",
+   "at": 1128826103,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o70",
+   "kind": "Checkbox",
+   "parent": "o58",
+   "name": "Edge yaw",
+   "v": "8c526c4f+10",
+   "at": 1128826153,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o71",
+   "kind": "Checkbox",
+   "parent": "o58",
+   "name": "Freestanding",
+   "v": "86c04dc4+10",
+   "at": 1128826185,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o72",
+   "kind": "Hotkey",
+   "parent": "o58",
+   "v": "697e8050+0",
+   "at": 1128826203,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o73",
+   "kind": "Slider",
+   "parent": "o58",
+   "name": "Roll",
+   "min": -45,
+   "max": 45,
+   "v": "a1dfc38d+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128826246,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o74",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o57",
+   "name": "Fake lag",
+   "rect": "0xc000c0c",
+   "a4": "0xd",
+   "a5": "0x1",
+   "at": 1128826324,
+   "children": [
+    "o75",
+    "o76",
+    "o77",
+    "o78",
+    "o79"
+   ]
+  },
+  {
+   "id": "o75",
+   "kind": "Checkbox",
+   "parent": "o74",
+   "name": "Enabled",
+   "v": "f9bbec7b+10",
+   "at": 1128826370,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o76",
+   "kind": "Hotkey",
+   "parent": "o74",
+   "v": "27d21bd4+0",
+   "at": 1128826388,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o77",
+   "kind": "Combo",
+   "parent": "o74",
+   "name": "Amount",
+   "v": "2a71d5fc+10",
+   "items": [
+    [
+     "Dynamic",
+     0
+    ],
+    [
+     "Maximum",
+     2
+    ],
+    [
+     "Fluctuate",
+     3
+    ]
+   ],
+   "at": 1128826420,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o78",
+   "kind": "Slider",
+   "parent": "o74",
+   "name": "Variance",
+   "min": 0,
+   "max": 100,
+   "v": "ca9768e6+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128826530,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o79",
+   "kind": "Slider",
+   "parent": "o74",
+   "name": "Limit",
+   "min": 1,
+   "max": 15,
+   "v": "f17fef11+10",
+   "unit": 0,
+   "step": 1,
+   "at": 1128826568,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o80",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o57",
+   "name": "Other",
+   "rect": "0xc0c0c0c",
+   "a4": "0xd",
+   "a5": "0x1",
+   "at": 1128826635,
+   "children": [
+    "o81",
+    "o82",
+    "o83",
+    "o84",
+    "o85",
+    "o86",
+    "o87"
+   ]
+  },
+  {
+   "id": "o81",
+   "kind": "Checkbox",
+   "parent": "o80",
+   "name": "Slow motion",
+   "v": "4df394ff+10",
+   "at": 1128826681,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o82",
+   "kind": "Hotkey",
+   "parent": "o80",
+   "v": "7293de2a+0",
+   "at": 1128826699,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o83",
+   "kind": "Combo",
+   "parent": "o80",
+   "name": "Leg movement",
+   "v": "8f8a4366+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Always slide",
+     1
+    ],
+    [
+     "Never slide",
+     2
+    ]
+   ],
+   "at": 1128826731,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o84",
+   "kind": "Checkbox",
+   "parent": "o80",
+   "name": "On shot anti-aim",
+   "v": "b2467427+10",
+   "at": 1128826834,
+   "fields": {
+    "50": {
+     "size": 4,
+     "val": "0xbb82f0f0"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o85",
+   "kind": "Hotkey",
+   "parent": "o80",
+   "v": "8f4f3c91+0",
+   "at": 1128826869,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o86",
+   "kind": "Checkbox",
+   "parent": "o80",
+   "name": "Fake peek",
+   "v": "8494fc0d+10",
+   "at": 1128826901,
+   "fields": {
+    "50": {
+     "size": 4,
+     "val": "0xbb82f0f0"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o87",
+   "kind": "Hotkey",
+   "parent": "o80",
+   "v": "ae772257+0",
+   "at": 1128826926,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o88",
+   "kind": "Tab",
+   "size": 448,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x43470094"
+    },
+    "98": {
+     "size": 4,
+     "val": "varbb660a3+0x10"
+    },
+    "100": {
+     "size": 4,
+     "val": "varbe6224c0+0x10"
+    },
+    "104": {
+     "size": 4,
+     "val": "varc8e339f1+0x10"
+    },
+    "108": {
+     "size": 4,
+     "val": "varcfcee7e5+0x10"
+    },
+    "110": {
+     "size": 4,
+     "val": "varfde7159f+0x10"
+    },
+    "114": {
+     "size": 4,
+     "val": "var2d41a289+0x10"
+    },
+    "118": {
+     "size": 4,
+     "val": "var2be03f3a+0x10"
+    },
+    "120": {
+     "size": 4,
+     "val": "vara53dc8b7"
+    },
+    "124": {
+     "size": 4,
+     "val": "0x1"
+    },
+    "128": {
+     "size": 4,
+     "val": "o89"
+    },
+    "130": {
+     "size": 4,
+     "val": "o110"
+    },
+    "134": {
+     "size": 4,
+     "val": "o124"
+    },
+    "138": {
+     "size": 4,
+     "val": "o90"
+    },
+    "140": {
+     "size": 4,
+     "val": "o92"
+    },
+    "144": {
+     "size": 4,
+     "val": "o94"
+    },
+    "148": {
+     "size": 4,
+     "val": "o95"
+    },
+    "150": {
+     "size": 4,
+     "val": "o97"
+    },
+    "154": {
+     "size": 4,
+     "val": "o98"
+    },
+    "158": {
+     "size": 4,
+     "val": "o99"
+    },
+    "160": {
+     "size": 4,
+     "val": "o102"
+    },
+    "164": {
+     "size": 4,
+     "val": "o103"
+    },
+    "168": {
+     "size": 4,
+     "val": "o104"
+    },
+    "170": {
+     "size": 4,
+     "val": "o106"
+    },
+    "174": {
+     "size": 4,
+     "val": "o107"
+    },
+    "178": {
+     "size": 4,
+     "val": "o108"
+    },
+    "180": {
+     "size": 4,
+     "val": "o112"
+    },
+    "184": {
+     "size": 4,
+     "val": "o111"
+    },
+    "188": {
+     "size": 4,
+     "val": "o113"
+    },
+    "190": {
+     "size": 4,
+     "val": "o115"
+    },
+    "194": {
+     "size": 4,
+     "val": "o116"
+    },
+    "198": {
+     "size": 4,
+     "val": "o117"
+    },
+    "11c": {
+     "size": 4,
+     "val": "vara31ae814"
+    },
+    "9c": {
+     "size": 4,
+     "val": "var1435b790+0x10"
+    },
+    "a0": {
+     "size": 4,
+     "val": "var9d9e24b1+0x10"
+    },
+    "a4": {
+     "size": 4,
+     "val": "varc68ac43e+0x10"
+    },
+    "a8": {
+     "size": 4,
+     "val": "varf7648818+0x10"
+    },
+    "ac": {
+     "size": 4,
+     "val": "var836dbf4b+0x10"
+    },
+    "b0": {
+     "size": 4,
+     "val": "vare7b78410+0x10"
+    },
+    "b4": {
+     "size": 4,
+     "val": "varafd7d6d3+0x10"
+    },
+    "b8": {
+     "size": 4,
+     "val": "vare9197e9c+0x10"
+    },
+    "bc": {
+     "size": 4,
+     "val": "vara2fbfac6+0x10"
+    },
+    "c0": {
+     "size": 4,
+     "val": "var1716ead7+0x10"
+    },
+    "c4": {
+     "size": 4,
+     "val": "var8946733c+0x10"
+    },
+    "c8": {
+     "size": 4,
+     "val": "varb9327935+0x10"
+    },
+    "cc": {
+     "size": 4,
+     "val": "var6ecf9c72+0x10"
+    },
+    "d0": {
+     "size": 4,
+     "val": "var771c5252+0x10"
+    },
+    "d4": {
+     "size": 4,
+     "val": "vara09c5083+0x10"
+    },
+    "d8": {
+     "size": 4,
+     "val": "varee182bda+0x10"
+    },
+    "dc": {
+     "size": 4,
+     "val": "var5bdb158d+0x10"
+    },
+    "e0": {
+     "size": 4,
+     "val": "var47a24717+0x10"
+    },
+    "e4": {
+     "size": 4,
+     "val": "vard1dc4d24+0x10"
+    },
+    "e8": {
+     "size": 4,
+     "val": "var5bc951e6+0x10"
+    },
+    "ec": {
+     "size": 4,
+     "val": "var8a823c30+0x10"
+    },
+    "f0": {
+     "size": 4,
+     "val": "var90b2820a+0x10"
+    },
+    "f4": {
+     "size": 4,
+     "val": "var6d349307+0x10"
+    },
+    "f8": {
+     "size": 4,
+     "val": "varb870359f+0x10"
+    },
+    "fc": {
+     "size": 4,
+     "val": "var6fdb5a10+0x10"
+    },
+    "10c": {
+     "size": 4,
+     "val": "var6cea053a+0x10"
+    },
+    "13c": {
+     "size": 4,
+     "val": "o93"
+    },
+    "14c": {
+     "size": 4,
+     "val": "o96"
+    },
+    "15c": {
+     "size": 4,
+     "val": "o101"
+    },
+    "16c": {
+     "size": 4,
+     "val": "o105"
+    },
+    "17c": {
+     "size": 4,
+     "val": "o109"
+    },
+    "12c": {
+     "size": 4,
+     "val": "o91"
+    },
+    "18c": {
+     "size": 4,
+     "val": "o114"
+    },
+    "19c": {
+     "size": 4,
+     "val": "o118"
+    },
+    "1a0": {
+     "size": 4,
+     "val": "o119"
+    },
+    "1a4": {
+     "size": 4,
+     "val": "o120"
+    },
+    "1a8": {
+     "size": 4,
+     "val": "o121"
+    },
+    "1ac": {
+     "size": 4,
+     "val": "o122"
+    },
+    "1b0": {
+     "size": 4,
+     "val": "o123"
+    },
+    "1b4": {
+     "size": 4,
+     "val": "o125"
+    },
+    "1b8": {
+     "size": 4,
+     "val": "o126"
+    },
+    "1bc": {
+     "size": 4,
+     "val": "o127"
+    }
+   },
+   "events": [],
+   "name": "LEGIT",
+   "at": 1128827006,
+   "directCalls": [
+    [
+     "433cf58b",
+     "43489344",
+     []
+    ]
+   ],
+   "addedAt": 1128829782
+  },
+  {
+   "id": "o89",
+   "kind": "Child",
+   "size": 200,
+   "fields": {
+    "60": {
+     "size": 4,
+     "val": "0x3c"
+    },
+    "64": {
+     "size": 4,
+     "val": "0x3c"
+    },
+    "b0": {
+     "size": 1,
+     "val": "0x0"
+    }
+   },
+   "events": [],
+   "tab": "o88",
+   "name": "Weapon type",
+   "rect": "0xff001800",
+   "a4": "0x0",
+   "a5": "0x1",
+   "at": 1128827701,
+   "children": [
+    "o90"
+   ]
+  },
+  {
+   "id": "o90",
+   "kind": "Custom_433231ca",
+   "parent": "o89",
+   "name": "Weapon type",
+   "a": [
+    "o88+0x124"
+   ],
+   "at": 1128827756,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o88",
+     "fn": "0x433e0a18"
+    }
+   ]
+  },
+  {
+   "id": "o91",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o88",
+   "name": "Aimbot",
+   "rect": "0x18000c00",
+   "a4": "0xe",
+   "a5": "0x1",
+   "at": 1128827861,
+   "children": [
+    "o92",
+    "o93",
+    "o94",
+    "o95",
+    "o96",
+    "o97",
+    "o98",
+    "o99",
+    "o100",
+    "o101",
+    "o102",
+    "o103",
+    "o104",
+    "o105",
+    "o106",
+    "o107",
+    "o108",
+    "o109"
+   ]
+  },
+  {
+   "id": "o92",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Enabled",
+   "v": "bb660a3+11",
+   "at": 1128827899,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o93",
+   "kind": "Hotkey",
+   "parent": "o91",
+   "v": "a31ae814+28",
+   "at": 1128827922,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o88",
+     "fn": "0x4336ed87"
+    }
+   ]
+  },
+  {
+   "id": "o94",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Speed",
+   "min": 0,
+   "max": 700,
+   "v": "9d9e24b1+14",
+   "unit": 0,
+   "stepRaw": 1008981770,
+   "at": 1128828009,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o95",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Speed (in attack)",
+   "min": 0,
+   "max": 700,
+   "v": "c68ac43e+14",
+   "unit": 0,
+   "stepRaw": 1008981770,
+   "at": 1128828062,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o96",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Speed scale - FOV",
+   "min": 1,
+   "max": 100,
+   "v": "f7648818+14",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128828104,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o97",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Maximum lock-on time",
+   "min": 1,
+   "max": 1001,
+   "v": "8946733c+14",
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128828152,
+   "a": [
+    "\"Maximum lock-on time\"",
+    "0x1",
+    "0x3e9",
+    "var8946733c+0x14",
+    "0x1",
+    "0x73006d"
+   ],
+   "fields": {},
+   "events": [],
+   "tips": [
+    [
+     1001,
+     "∞"
+    ]
+   ]
+  },
+  {
+   "id": "o98",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Reaction time",
+   "min": 0,
+   "max": 200,
+   "v": "836dbf4b+14",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128828251,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o99",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "Maximum FOV",
+   "min": 1,
+   "max": 900,
+   "v": "1435b790+14",
+   "unit": 176,
+   "stepRaw": 1036831949,
+   "at": 1128828311,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o100",
+   "kind": "Label",
+   "parent": "o91",
+   "name": "Recoil compensation (P/Y)",
+   "at": 1128828339,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o101",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "",
+   "min": 0,
+   "max": 125,
+   "v": "a2fbfac6+14",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128828368,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o102",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "",
+   "min": 0,
+   "max": 100,
+   "v": "1716ead7+14",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128828403,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o103",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Quick stop",
+   "v": "e9197e9c+11",
+   "at": 1128828435,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o104",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Aim through smoke",
+   "v": "e7b78410+11",
+   "at": 1128828471,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o105",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Aim while blind",
+   "v": "afd7d6d3+11",
+   "at": 1128828507,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o106",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Head",
+   "v": "b9327935+11",
+   "at": 1128828543,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o107",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Chest",
+   "v": "6ecf9c72+11",
+   "at": 1128828579,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o108",
+   "kind": "Checkbox",
+   "parent": "o91",
+   "name": "Stomach",
+   "v": "771c5252+11",
+   "at": 1128828615,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o109",
+   "kind": "Slider",
+   "parent": "o91",
+   "name": "First shot delay range",
+   "min": 0,
+   "max": 64,
+   "v": "a09c5083+14",
+   "a5": 1,
+   "unit": 7209065,
+   "step": 1,
+   "at": 1128828663,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "tips": [
+    [
+     0,
+     "Off"
+    ]
+   ]
+  },
+  {
+   "id": "o110",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o88",
+   "name": "Triggerbot",
+   "rect": "0x10000c0c",
+   "a4": "0xc",
+   "a5": "0x1",
+   "at": 1128828804,
+   "children": [
+    "o111",
+    "o112",
+    "o113",
+    "o114",
+    "o115",
+    "o116",
+    "o117",
+    "o118",
+    "o119",
+    "o120",
+    "o121",
+    "o122",
+    "o123"
+   ]
+  },
+  {
+   "id": "o111",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Enabled",
+   "v": "ee182bda+11",
+   "at": 1128828844,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o112",
+   "kind": "Hotkey",
+   "parent": "o110",
+   "v": "a53dc8b7+28",
+   "at": 1128828871,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o113",
+   "kind": "Slider",
+   "parent": "o110",
+   "name": "Minimum hit chance",
+   "min": 0,
+   "max": 100,
+   "v": "5bdb158d+14",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128828912,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o114",
+   "kind": "Slider",
+   "parent": "o110",
+   "name": "Reaction time",
+   "min": 0,
+   "max": 200,
+   "v": "6cea053a+14",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128828963,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o88",
+     "fn": "0x4336b6eb"
+    }
+   ]
+  },
+  {
+   "id": "o115",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Burst fire",
+   "v": "d1dc4d24+11",
+   "at": 1128829033,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o116+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o116",
+   "kind": "Slider",
+   "parent": "o110",
+   "name": "",
+   "min": 1,
+   "max": 500,
+   "v": "5bc951e6+14",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128829079,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o115+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o115:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o117",
+   "kind": "Slider",
+   "parent": "o110",
+   "name": "Minimum damage",
+   "min": 1,
+   "max": 100,
+   "v": "47a24717+14",
+   "unit": 0,
+   "step": 1,
+   "at": 1128829158,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o118",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Automatic penetration",
+   "v": "6d349307+11",
+   "at": 1128829194,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o119",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Shoot through smoke",
+   "v": "b870359f+11",
+   "at": 1128829230,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o120",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Shoot while blind",
+   "v": "6fdb5a10+11",
+   "at": 1128829266,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o121",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Head",
+   "v": "be6224c0+11",
+   "at": 1128829302,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o122",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Chest",
+   "v": "c8e339f1+11",
+   "at": 1128829338,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o123",
+   "kind": "Checkbox",
+   "parent": "o110",
+   "name": "Stomach",
+   "v": "cfcee7e5+11",
+   "at": 1128829374,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o124",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o88",
+   "name": "Other",
+   "rect": "0x8100c0c",
+   "a4": "0x0",
+   "a5": "0x1",
+   "at": 1128829444,
+   "children": [
+    "o125",
+    "o126",
+    "o127"
+   ]
+  },
+  {
+   "id": "o125",
+   "kind": "Combo",
+   "parent": "o124",
+   "name": "Accuracy boost",
+   "v": "fde7159f+14",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Low",
+     1
+    ],
+    [
+     "High",
+     2
+    ]
+   ],
+   "at": 1128829484,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o88",
+     "fn": "0x433b7738"
+    }
+   ]
+  },
+  {
+   "id": "o126",
+   "kind": "Slider",
+   "parent": "o124",
+   "name": "Accuracy boost range",
+   "min": 1,
+   "max": 64,
+   "v": "2d41a289+14",
+   "a5": 1,
+   "unit": 7209065,
+   "step": 1,
+   "at": 1128829657,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "tips": [
+    [
+     64,
+     "∞"
+    ]
+   ]
+  },
+  {
+   "id": "o127",
+   "kind": "Checkbox",
+   "parent": "o124",
+   "name": "Standalone recoil compensation",
+   "v": "2be03f3a+11",
+   "at": 1128829745,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o128",
+   "kind": "Tab",
+   "size": 296,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x43470094"
+    },
+    "98": {
+     "size": 4,
+     "val": "o129"
+    },
+    "100": {
+     "size": 4,
+     "val": "o197"
+    },
+    "104": {
+     "size": 4,
+     "val": "o199"
+    },
+    "108": {
+     "size": 4,
+     "val": "o200"
+    },
+    "110": {
+     "size": 4,
+     "val": "o203"
+    },
+    "114": {
+     "size": 4,
+     "val": "o204"
+    },
+    "118": {
+     "size": 4,
+     "val": "o163"
+    },
+    "120": {
+     "size": 4,
+     "val": "o237"
+    },
+    "124": {
+     "size": 4,
+     "val": "o273"
+    },
+    "11c": {
+     "size": 4,
+     "val": "o164"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o166"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o168"
+    },
+    "b4": {
+     "size": 4,
+     "val": "o170"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o171"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o172"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o174"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o176"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o177"
+    },
+    "dc": {
+     "size": 4,
+     "val": "o178"
+    },
+    "e0": {
+     "size": 4,
+     "val": "o180"
+    },
+    "e4": {
+     "size": 4,
+     "val": "o181"
+    },
+    "e8": {
+     "size": 4,
+     "val": "o183"
+    },
+    "ec": {
+     "size": 4,
+     "val": "o185"
+    },
+    "f0": {
+     "size": 4,
+     "val": "o186"
+    },
+    "cc": {
+     "size": 4,
+     "val": "o187"
+    },
+    "d0": {
+     "size": 4,
+     "val": "o189"
+    },
+    "d4": {
+     "size": 4,
+     "val": "o190"
+    },
+    "d8": {
+     "size": 4,
+     "val": "o191"
+    },
+    "f4": {
+     "size": 4,
+     "val": "o193"
+    },
+    "f8": {
+     "size": 4,
+     "val": "o195"
+    },
+    "fc": {
+     "size": 4,
+     "val": "o196"
+    },
+    "10c": {
+     "size": 4,
+     "val": "o201"
+    },
+    "a0": {
+     "size": 4,
+     "val": "o165"
+    },
+    "a4": {
+     "size": 4,
+     "val": "o210"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o283"
+    },
+    "9c": {
+     "size": 4,
+     "val": "o274"
+    }
+   },
+   "events": [],
+   "name": "VISUALS",
+   "at": 1128829836,
+   "directCalls": [
+    [
+     "43407c86",
+     "43489abc",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433fb6b1",
+     "43489c09",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "4337cacf",
+     "43489cf5",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433ab16b",
+     "43489e2d",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433ce8ba",
+     "43489f49",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433e520a",
+     "4348a059",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433f9c51",
+     "4348a149",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "433a121b",
+     "4348a239",
+     [
+      "0x0"
+     ]
+    ],
+    [
+     "4334d372",
+     "4348aba9",
+     [
+      "o237"
+     ]
+    ]
+   ],
+   "addedAt": 1128837158
+  },
+  {
+   "id": "o129",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o128",
+   "name": "Player ESP",
+   "rect": "0xd000c00",
+   "a4": "0x11",
+   "a5": "0x1",
+   "at": 1128829893,
+   "children": [
+    "o130",
+    "o131",
+    "o132",
+    "o133",
+    "o134",
+    "o135",
+    "o136",
+    "o137",
+    "o138",
+    "o139",
+    "o140",
+    "o141",
+    "o142",
+    "o143",
+    "o144",
+    "o145",
+    "o146",
+    "o147",
+    "o148",
+    "o149",
+    "o150",
+    "o151",
+    "o152",
+    "o153",
+    "o154",
+    "o155",
+    "o156",
+    "o157",
+    "o158",
+    "o159",
+    "o160",
+    "o161",
+    "o162",
+    "o163",
+    "o164"
+   ]
+  },
+  {
+   "id": "o130",
+   "kind": "Label",
+   "parent": "o129",
+   "name": "Activation type",
+   "at": 1128829925,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o131",
+   "kind": "Hotkey",
+   "parent": "o129",
+   "v": "4700a298+0",
+   "at": 1128829943,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o132",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Teammates",
+   "v": "45d9d2ac+10",
+   "at": 1128829975,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o133",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Dormant",
+   "v": "c410c5d3+10",
+   "at": 1128830007,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o134",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Bounding box",
+   "v": "cff9ebad+10",
+   "at": 1128830039,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o135",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "4d243e0d+10",
+   "at": 1128830060,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o136",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Health bar",
+   "v": "49733d3c+10",
+   "at": 1128830092,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o137",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Name",
+   "v": "a1c152a1+10",
+   "at": 1128830124,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o138",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "25feb6c1+10",
+   "at": 1128830145,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o139",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Flags",
+   "v": "84a8b33+10",
+   "at": 1128830177,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o140",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Weapon text",
+   "v": "bb3fdf6a+10",
+   "at": 1128830209,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o141",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Weapon icon",
+   "v": "6a874b2c+10",
+   "at": 1128830241,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o142",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "f64778+10",
+   "at": 1128830262,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o143",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Ammo",
+   "v": "43f02f68+10",
+   "at": 1128830294,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o144",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "8bec37f4+10",
+   "at": 1128830315,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o145",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Distance",
+   "v": "f6d81d5+10",
+   "at": 1128830347,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o146",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Glow",
+   "v": "b1d008b7+10",
+   "at": 1128830379,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o147",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "ece872cb+10",
+   "at": 1128830400,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o148",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Hit marker",
+   "v": "9c345dfa+10",
+   "at": 1128830432,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o149",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Hit marker sound",
+   "v": "69c9d9f2+10",
+   "at": 1128830464,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o150",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Visualize aimbot",
+   "v": "535095f5+10",
+   "at": 1128830496,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o151",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "7451e155+10",
+   "at": 1128830517,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o152",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Visualize aimbot (safe point)",
+   "v": "e9cc8b95+10",
+   "at": 1128830549,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o153",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "e20f6035+10",
+   "at": 1128830570,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o154",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Visualize sounds",
+   "v": "e8d2a207+10",
+   "at": 1128830602,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o155",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "7e3b4c1b+10",
+   "at": 1128830623,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o156",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Line of sight",
+   "v": "1de914e6+10",
+   "at": 1128830655,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o157",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "745efa1e+10",
+   "at": 1128830676,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o158",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Money",
+   "v": "53970838+10",
+   "at": 1128830708,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o159",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Skeleton",
+   "v": "523e4b35+10",
+   "at": 1128830740,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o160",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "e995f95+10",
+   "at": 1128830761,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o161",
+   "kind": "Checkbox",
+   "parent": "o129",
+   "name": "Out of FOV arrow",
+   "v": "95a660ab+10",
+   "at": 1128830793,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4335bd4d"
+    }
+   ]
+  },
+  {
+   "id": "o162",
+   "kind": "Color",
+   "parent": "o129",
+   "v": "7d18a71f+10",
+   "at": 1128830816,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o163",
+   "kind": "Slider",
+   "parent": "o129",
+   "name": "",
+   "min": 1,
+   "max": 30,
+   "v": "4564bfc7+10",
+   "a5": 1,
+   "unit": 7864432,
+   "step": 1,
+   "at": 1128830853,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o164",
+   "kind": "Slider",
+   "parent": "o129",
+   "name": "",
+   "min": 1,
+   "max": 100,
+   "v": "9cbedae+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128830905,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o165",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o128",
+   "name": "Colored models",
+   "rect": "0xb0d0c00",
+   "a4": "0x10",
+   "a5": "0x1",
+   "at": 1128831329,
+   "children": [
+    "o166",
+    "o167",
+    "o168",
+    "o169",
+    "o170",
+    "o171",
+    "o172",
+    "o173",
+    "o174",
+    "o175",
+    "o176",
+    "o177",
+    "o178",
+    "o179",
+    "o180",
+    "o181",
+    "o182",
+    "o183",
+    "o184",
+    "o185",
+    "o186",
+    "o187",
+    "o188",
+    "o189",
+    "o190",
+    "o191",
+    "o192",
+    "o193",
+    "o194",
+    "o195",
+    "o196",
+    "o197",
+    "o198",
+    "o199",
+    "o200",
+    "o201",
+    "o202",
+    "o203",
+    "o204",
+    "o205",
+    "o206",
+    "o207",
+    "o208",
+    "o209"
+   ]
+  },
+  {
+   "id": "o166",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Player",
+   "v": "c51e0d3d+10",
+   "at": 1128831375,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4339f7c4"
+    }
+   ]
+  },
+  {
+   "id": "o167",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "fe06341d+10",
+   "at": 1128831440,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o168",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Player behind wall",
+   "v": "f6b67de5+10",
+   "at": 1128831472,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4339f7c4"
+    }
+   ]
+  },
+  {
+   "id": "o169",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "d4699245+10",
+   "at": 1128831537,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o170",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "44f7095+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128831563,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4339458b"
+    }
+   ]
+  },
+  {
+   "id": "o171",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "9ff240e4+10",
+   "at": 1128831662,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o172",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Teammate",
+   "v": "1570af7c+10",
+   "at": 1128831708,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433866ac"
+    }
+   ]
+  },
+  {
+   "id": "o173",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "2cefc91c+10",
+   "at": 1128831773,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o174",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Teammate behind wall",
+   "v": "57bf65ec+10",
+   "at": 1128831805,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433866ac"
+    }
+   ]
+  },
+  {
+   "id": "o175",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "4ad8938+10",
+   "at": 1128831870,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o176",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "e85380fa+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128831896,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4340c76d"
+    }
+   ]
+  },
+  {
+   "id": "o177",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "f3d8f0d1+10",
+   "at": 1128831995,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o178",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Local player",
+   "v": "6670db4d+10",
+   "at": 1128832041,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433c9ed5"
+    }
+   ]
+  },
+  {
+   "id": "o179",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "9201e7ed+10",
+   "at": 1128832106,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o180",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "3b28b0e5+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128832132,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4336ed23"
+    }
+   ]
+  },
+  {
+   "id": "o181",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "9436ecb4+10",
+   "at": 1128832231,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o182",
+   "kind": "Multi",
+   "parent": "o165",
+   "name": "Local player transparency",
+   "v": "3ea36c3a+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Grenade",
+     1
+    ],
+    [
+     "Scoped",
+     2
+    ]
+   ],
+   "at": 1128832279,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o183",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Local player fake",
+   "v": "96db2e1c+10",
+   "at": 1128832353,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433ed36d"
+    }
+   ]
+  },
+  {
+   "id": "o184",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "a98ceae8+10",
+   "at": 1128832418,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o185",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "3fc208c1+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128832444,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4334831e"
+    }
+   ]
+  },
+  {
+   "id": "o186",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "f50a4300+10",
+   "at": 1128832543,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o187",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "On shot",
+   "v": "5e0e2558+10",
+   "at": 1128832589,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4340120e"
+    }
+   ]
+  },
+  {
+   "id": "o188",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "c2dbf0a4+10",
+   "at": 1128832654,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o189",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "17c5b91a+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128832680,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433c0709"
+    }
+   ]
+  },
+  {
+   "id": "o190",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "8b122392+10",
+   "at": 1128832779,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o191",
+   "kind": "Slider",
+   "parent": "o165",
+   "name": "",
+   "min": 2,
+   "max": 100,
+   "v": "1a07b48f+10",
+   "unit": 115,
+   "stepRaw": 1036831949,
+   "at": 1128832827,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o192",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Ragdolls",
+   "v": "8ccaf8dc+10",
+   "at": 1128832873,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o193",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Hands",
+   "v": "e8407b64+10",
+   "at": 1128832905,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433f4c86"
+    }
+   ]
+  },
+  {
+   "id": "o194",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "5a93f490+10",
+   "at": 1128832936,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o195",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "b7360ba6+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128832962,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4338870d"
+    }
+   ]
+  },
+  {
+   "id": "o196",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "2926f5de+10",
+   "at": 1128833055,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o197",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Weapon viewmodel",
+   "v": "da411d58+10",
+   "at": 1128833145,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433f1157"
+    }
+   ]
+  },
+  {
+   "id": "o198",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "75a868a4+10",
+   "at": 1128833176,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o199",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "2a1fa11a+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128833202,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433c8f5a"
+    }
+   ]
+  },
+  {
+   "id": "o200",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "1c678b92+10",
+   "at": 1128833295,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o201",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Weapons",
+   "v": "92ebad93+10",
+   "at": 1128833385,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4334da5a"
+    }
+   ]
+  },
+  {
+   "id": "o202",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "83be3fa7+10",
+   "at": 1128833416,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o203",
+   "kind": "Combo",
+   "parent": "o165",
+   "name": "",
+   "v": "118a8443+10",
+   "items": [
+    [
+     "Default",
+     0
+    ],
+    [
+     "Solid",
+     1
+    ],
+    [
+     "Shaded",
+     2
+    ],
+    [
+     "Metallic",
+     3
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Bubble",
+     5
+    ],
+    [
+     "Original",
+     6
+    ]
+   ],
+   "at": 1128833442,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x4332f222"
+    }
+   ]
+  },
+  {
+   "id": "o204",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "6d66c717+10",
+   "at": 1128833535,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o205",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Disable model occlusion",
+   "v": "8e0781ae+10",
+   "at": 1128833625,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o206",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Shadow",
+   "v": "67f8885c+10",
+   "at": 1128833657,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o207",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "c2140c28+10",
+   "at": 1128833678,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o208",
+   "kind": "Checkbox",
+   "parent": "o165",
+   "name": "Props",
+   "v": "e217c264+10",
+   "at": 1128833710,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o209",
+   "kind": "Color",
+   "parent": "o165",
+   "v": "84830790+10",
+   "at": 1128833731,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o210",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o128",
+   "name": "Other ESP",
+   "rect": "0xc000c0c",
+   "a4": "0x9",
+   "a5": "0x1",
+   "at": 1128833801,
+   "children": [
+    "o211",
+    "o212",
+    "o213",
+    "o214",
+    "o215",
+    "o216",
+    "o217",
+    "o218",
+    "o219",
+    "o220",
+    "o221",
+    "o222",
+    "o223",
+    "o224",
+    "o225",
+    "o226",
+    "o227",
+    "o228",
+    "o229",
+    "o230",
+    "o231",
+    "o232",
+    "o233",
+    "o234",
+    "o235",
+    "o236",
+    "o237",
+    "o238",
+    "o239",
+    "o240",
+    "o241",
+    "o242",
+    "o243",
+    "o244",
+    "o245",
+    "o246",
+    "o247",
+    "o248",
+    "o249",
+    "o250",
+    "o251",
+    "o252",
+    "o253",
+    "o254",
+    "o255",
+    "o256",
+    "o257",
+    "o258",
+    "o259",
+    "o260",
+    "o261",
+    "o262",
+    "o263",
+    "o264",
+    "o265",
+    "o266",
+    "o267",
+    "o268",
+    "o269",
+    "o270",
+    "o271",
+    "o272",
+    "o273"
+   ]
+  },
+  {
+   "id": "o211",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Radar",
+   "v": "d7cd1b0b+10",
+   "at": 1128833851,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o212",
+   "kind": "Multi",
+   "parent": "o210",
+   "name": "Dropped weapons",
+   "v": "6d3d6833+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Icon",
+     1
+    ],
+    [
+     "Text",
+     2
+    ],
+    [
+     "Glow",
+     4
+    ],
+    [
+     "Ammo",
+     8
+    ],
+    [
+     "Distance",
+     16
+    ]
+   ],
+   "at": 1128833885,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o213",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "a10dc407+10",
+   "at": 1128834009,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o214",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Grenades",
+   "v": "25b4b670+10",
+   "at": 1128834041,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o215",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "b8c2c5bc+10",
+   "at": 1128834061,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o216",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Inaccuracy overlay",
+   "v": "edf6c582+10",
+   "at": 1128834093,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o217",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "2b61d25a+10",
+   "at": 1128834113,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o218",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Recoil overlay",
+   "v": "78a1b150+10",
+   "at": 1128834145,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o219",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Crosshair",
+   "v": "ad37a2eb+10",
+   "at": 1128834177,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o220",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Bomb",
+   "v": "f2937e07+10",
+   "at": 1128834209,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o221",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "2ada481b+10",
+   "at": 1128834229,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o222",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Grenade trajectory",
+   "v": "dc4c1bb9+10",
+   "at": 1128834261,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o225+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o223",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "8428f8f9+10",
+   "at": 1128834284,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o224",
+   "kind": "Label",
+   "parent": "o210",
+   "name": "Grenade trajectory (hit)",
+   "at": 1128834302,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o225+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o222:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o225",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "c2611c1f+10",
+   "at": 1128834327,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o222+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "o224+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o226",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Grenade proximity warning",
+   "v": "85bda341+10",
+   "at": 1128834410,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o227",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Spectators",
+   "v": "38623779+10",
+   "at": 1128834442,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o228",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Penetration reticle",
+   "v": "1e7432a5+10",
+   "at": 1128834474,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o229",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Hostages",
+   "v": "559f78dc+10",
+   "at": 1128834506,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o230",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "a6b878a8+10",
+   "at": 1128834527,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o231",
+   "kind": "Multi",
+   "parent": "o210",
+   "name": "Feature indicators",
+   "v": "59a226c2+10",
+   "a3": "0x0",
+   "a4": "0x0",
+   "items": [
+    [
+     "Force safe point",
+     1
+    ],
+    [
+     "Force body aim",
+     2
+    ],
+    [
+     "Ping spike",
+     4
+    ],
+    [
+     "Double tap",
+     8
+    ],
+    [
+     "Duck peek assist",
+     16
+    ],
+    [
+     "Freestanding",
+     32
+    ],
+    [
+     "On shot anti-aim",
+     64
+    ],
+    [
+     "Minimum damage override",
+     256
+    ]
+   ],
+   "at": 1128834563,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o232",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Shared ESP",
+   "v": "e533025+10",
+   "at": 1128834760,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o235+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o233",
+   "kind": "Hotkey",
+   "parent": "o210",
+   "v": "7174d684+0",
+   "at": 1128834780,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o234",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Shared ESP with other team",
+   "v": "6834d5da+10",
+   "at": 1128834812,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o235+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o232:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o235",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Restrict shared ESP updates",
+   "v": "cbe162f8+10",
+   "at": 1128834857,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o232+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "o234+0x4"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o236",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Upgrade tablet",
+   "v": "553d3c3f+10",
+   "at": 1128834931,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o237",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Danger Zone items",
+   "v": "89653491+10",
+   "at": 1128834963,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433c1019"
+    }
+   ]
+  },
+  {
+   "id": "o238",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Drone gun",
+   "v": "75a591c2+10",
+   "at": 1128835005,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o239",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "db9a269a+10",
+   "at": 1128835026,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o240",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Blackhawk",
+   "v": "325af11e+10",
+   "at": 1128835058,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o241",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "174abfd6+10",
+   "at": 1128835079,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o242",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Drone",
+   "v": "6e6cdad7+10",
+   "at": 1128835111,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o243",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "f407872b+10",
+   "at": 1128835132,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o244",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Random case",
+   "v": "5da3152c+10",
+   "at": 1128835164,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o245",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "82ce178+10",
+   "at": 1128835185,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o246",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Tool case",
+   "v": "f2a389d2+10",
+   "at": 1128835217,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o247",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "928c112a+10",
+   "at": 1128835238,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o248",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Pistol case",
+   "v": "3b6a149e+10",
+   "at": 1128835270,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o249",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "cee5c756+10",
+   "at": 1128835291,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o250",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Explosive case",
+   "v": "a3b423be+10",
+   "at": 1128835323,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o251",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "55436936+10",
+   "at": 1128835344,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o252",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Heavy weapon case",
+   "v": "52daaa5d+10",
+   "at": 1128835376,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o253",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "72894f7d+10",
+   "at": 1128835397,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o254",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Light weapon case",
+   "v": "81d65d4+10",
+   "at": 1128835429,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o255",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "cf605580+10",
+   "at": 1128835450,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o256",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Dufflebag",
+   "v": "d13ffdf6+10",
+   "at": 1128835482,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o257",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "8b5c32ae+10",
+   "at": 1128835503,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o258",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Jammer",
+   "v": "6a586832+10",
+   "at": 1128835535,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o259",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "76da764a+10",
+   "at": 1128835556,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o260",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Ammobox",
+   "v": "f8774353+10",
+   "at": 1128835588,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o261",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "406a4767+10",
+   "at": 1128835609,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o262",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Armor",
+   "v": "ffd5c89d+10",
+   "at": 1128835641,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o263",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "c11b6fbd+10",
+   "at": 1128835662,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o264",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Parachute pack",
+   "v": "2802a1f6+10",
+   "at": 1128835694,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o265",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "b424b6ae+10",
+   "at": 1128835715,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o266",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Briefcase",
+   "v": "2b4cde08+10",
+   "at": 1128835747,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o267",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "c8555dd4+10",
+   "at": 1128835768,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o268",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Tablet upgrade zone",
+   "v": "4fd3f678+10",
+   "at": 1128835800,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o269",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "58386184+10",
+   "at": 1128835821,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o270",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Tablet upgrade drone",
+   "v": "42694ace+10",
+   "at": 1128835853,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o271",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "6d6a3c6+10",
+   "at": 1128835874,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o272",
+   "kind": "Checkbox",
+   "parent": "o210",
+   "name": "Cash stack",
+   "v": "2d915386+10",
+   "at": 1128835906,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o273",
+   "kind": "Color",
+   "parent": "o210",
+   "v": "e5f28dfe+10",
+   "at": 1128835927,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o274",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o128",
+   "name": "Effects",
+   "rect": "0xc0c0c0c",
+   "a4": "0x9",
+   "a5": "0x1",
+   "at": 1128836060,
+   "children": [
+    "o275",
+    "o276",
+    "o277",
+    "o278",
+    "o279",
+    "o280",
+    "o281",
+    "o282",
+    "o283",
+    "o284",
+    "o285",
+    "o286",
+    "o287",
+    "o288",
+    "o289",
+    "o290",
+    "o291",
+    "o292",
+    "o293",
+    "o294",
+    "o295",
+    "o296",
+    "o297",
+    "o298"
+   ]
+  },
+  {
+   "id": "o275",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Remove flashbang effects",
+   "v": "461d3721+10",
+   "at": 1128836106,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o276",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Remove smoke grenades",
+   "v": "623bd4f2+10",
+   "at": 1128836138,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o277",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Remove fog",
+   "v": "3359e29c+10",
+   "at": 1128836170,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o278",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Remove skybox",
+   "v": "fbd4768d+10",
+   "at": 1128836202,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o279",
+   "kind": "Combo",
+   "parent": "o274",
+   "name": "Visual recoil adjustment",
+   "v": "70ba27e0+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Remove shake",
+     1
+    ],
+    [
+     "Remove all",
+     2
+    ]
+   ],
+   "at": 1128836234,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o280",
+   "kind": "Slider",
+   "parent": "o274",
+   "name": "Transparent walls",
+   "min": 1,
+   "max": 100,
+   "v": "9b4090d9+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128836336,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o281",
+   "kind": "Slider",
+   "parent": "o274",
+   "name": "Transparent props",
+   "min": 1,
+   "max": 100,
+   "v": "8bed781e+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128836376,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o282",
+   "kind": "Combo",
+   "parent": "o274",
+   "name": "Brightness adjustment",
+   "v": "2e5dd918+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "Fullbright",
+     1
+    ],
+    [
+     "Night mode",
+     2
+    ]
+   ],
+   "at": 1128836408,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433efa40"
+    }
+   ]
+  },
+  {
+   "id": "o283",
+   "kind": "Color",
+   "parent": "o274",
+   "v": "2a0b0df3+10",
+   "at": 1128836535,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o284",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Remove scope overlay",
+   "v": "171eed00+10",
+   "at": 1128836582,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o285",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Instant scope",
+   "v": "eafcead9+10",
+   "at": 1128836614,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o286",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Disable post processing",
+   "v": "a8321370+10",
+   "at": 1128836646,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o287",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Force third person (alive)",
+   "v": "d35f8540+10",
+   "at": 1128836678,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x433ffd9b"
+    }
+   ]
+  },
+  {
+   "id": "o288",
+   "kind": "Hotkey",
+   "parent": "o274",
+   "v": "3685fce3+0",
+   "at": 1128836730,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o289",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Force third person (dead)",
+   "v": "264e3e21+10",
+   "at": 1128836762,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o128",
+     "fn": "0x434076b5"
+    }
+   ]
+  },
+  {
+   "id": "o290",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Disable rendering of teammates",
+   "v": "4cbb0e86+10",
+   "at": 1128836828,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o291",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Disable rendering of ragdolls",
+   "v": "b589f662+10",
+   "at": 1128836860,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o292",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Bullet tracers",
+   "v": "3a5285a6+10",
+   "at": 1128836892,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o293",
+   "kind": "Color",
+   "parent": "o274",
+   "v": "635f47de+10",
+   "at": 1128836913,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o294",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Bullet impacts",
+   "v": "d54a1cbd+10",
+   "at": 1128836945,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o295+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o295",
+   "kind": "Slider",
+   "parent": "o274",
+   "name": "",
+   "min": 1,
+   "max": 20,
+   "v": "4c044f71+10",
+   "a5": 1,
+   "unit": 115,
+   "step": 1,
+   "at": 1128836981,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o294+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o294:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o296",
+   "kind": "Checkbox",
+   "parent": "o274",
+   "name": "Modulate harmless molotovs",
+   "v": "c82cbd3b+10",
+   "at": 1128837043,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o298+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o297",
+   "kind": "Color",
+   "parent": "o274",
+   "v": "f9200def+10",
+   "at": 1128837066,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o298",
+   "kind": "Slider",
+   "parent": "o274",
+   "name": "",
+   "min": 0,
+   "max": 100,
+   "v": "921caa0a+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128837100,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o296+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o296:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o299",
+   "kind": "Tab",
+   "size": 220,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x434706c8"
+    },
+    "98": {
+     "size": 4,
+     "val": "o300"
+    },
+    "d0": {
+     "size": 4,
+     "val": "o321"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o338"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o339"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o340"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o341"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o342"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o343"
+    },
+    "cc": {
+     "size": 4,
+     "val": "o344"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o345"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o346"
+    },
+    "9c": {
+     "size": 4,
+     "val": "o332"
+    },
+    "a4": {
+     "size": 4,
+     "val": "o357"
+    },
+    "d4": {
+     "size": 4,
+     "val": "o360"
+    },
+    "d8": {
+     "size": 4,
+     "val": "o371"
+    },
+    "a0": {
+     "size": 4,
+     "val": "o355"
+    }
+   },
+   "events": [],
+   "name": "MISC",
+   "at": 1128837215,
+   "addedAt": 1128841046
+  },
+  {
+   "id": "o300",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o299",
+   "name": "Miscellaneous",
+   "rect": "0x18000c00",
+   "a4": "0xd",
+   "a5": "0x1",
+   "at": 1128837272,
+   "children": [
+    "o301",
+    "o302",
+    "o303",
+    "o304",
+    "o305",
+    "o306",
+    "o307",
+    "o308",
+    "o309",
+    "o310",
+    "o311",
+    "o312",
+    "o313",
+    "o314",
+    "o315",
+    "o316",
+    "o317",
+    "o318",
+    "o319",
+    "o320",
+    "o321",
+    "o322",
+    "o323",
+    "o324",
+    "o325",
+    "o326",
+    "o327",
+    "o328",
+    "o329",
+    "o330",
+    "o331"
+   ]
+  },
+  {
+   "id": "o301",
+   "kind": "Slider",
+   "parent": "o300",
+   "name": "Override FOV",
+   "min": 1,
+   "max": 135,
+   "v": "fc225a4f+10",
+   "a5": 1,
+   "unit": 176,
+   "step": 1,
+   "at": 1128837336,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o302",
+   "kind": "Slider",
+   "parent": "o300",
+   "name": "Override zoom FOV",
+   "min": 0,
+   "max": 100,
+   "v": "ca80f9ed+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128837375,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o303",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Knifebot",
+   "v": "7a5909ee+10",
+   "at": 1128837407,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o304+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o304",
+   "kind": "Multi",
+   "parent": "o300",
+   "name": "",
+   "v": "a7c81d9b+10",
+   "items": [
+    [
+     "Swing",
+     1
+    ],
+    [
+     "Full stab",
+     2
+    ]
+   ],
+   "at": 1128837437,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o303+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o303:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o305",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Zeusbot",
+   "v": "2e314ce2+10",
+   "at": 1128837542,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o306",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Automatic weapons",
+   "v": "3d5de026+10",
+   "at": 1128837574,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o307+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o307",
+   "kind": "Slider",
+   "parent": "o300",
+   "name": "",
+   "min": 0,
+   "max": 200,
+   "v": "3952aaa6+10",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128837615,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o306+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o306:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o308",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Quick switch",
+   "v": "d634908+10",
+   "at": 1128837674,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o309",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Reveal competitive ranks",
+   "v": "30e0cfe7+10",
+   "at": 1128837706,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o310",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Reveal Overwatch players",
+   "v": "d351d519+10",
+   "at": 1128837738,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o311",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Auto-accept matchmaking",
+   "v": "141f80b7+10",
+   "at": 1128837792,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433d2d73"
+    }
+   ]
+  },
+  {
+   "id": "o312",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Clan tag spammer",
+   "v": "9f6c4676+10",
+   "at": 1128837840,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o313",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Log weapon purchases",
+   "v": "5086bcf5+10",
+   "at": 1128837872,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o314",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Log damage dealt",
+   "v": "ce14f5a+10",
+   "at": 1128837904,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o315",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Automatic grenade release",
+   "v": "969eef1f+10",
+   "at": 1128837936,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o317+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o316",
+   "kind": "Hotkey",
+   "parent": "o300",
+   "v": "db791db8+0",
+   "at": 1128837958,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o317",
+   "kind": "Slider",
+   "parent": "o300",
+   "name": "Minimum grenade damage",
+   "min": 1,
+   "max": 50,
+   "v": "510f682d+10",
+   "unit": 0,
+   "step": 1,
+   "at": 1128837998,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o315+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o315:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o318",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Super toss",
+   "v": "37a61386+10",
+   "at": 1128838061,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o319",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Ping spike",
+   "v": "916f47da+10",
+   "at": 1128838095,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o321+0x4"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433f9832"
+    }
+   ]
+  },
+  {
+   "id": "o320",
+   "kind": "Hotkey",
+   "parent": "o300",
+   "v": "3c4135ff+0",
+   "at": 1128838155,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o321",
+   "kind": "Slider",
+   "parent": "o300",
+   "name": "",
+   "min": 1,
+   "max": 200,
+   "v": "c5290e81+10",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128838197,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o319+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o319:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o322",
+   "kind": "Label",
+   "parent": "o300",
+   "name": "Free look",
+   "at": 1128838256,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o323",
+   "kind": "Hotkey",
+   "parent": "o300",
+   "v": "77d31850+0",
+   "at": 1128838276,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o324",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Persistent kill feed",
+   "v": "245cedb5+10",
+   "at": 1128838312,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o325",
+   "kind": "Label",
+   "parent": "o300",
+   "name": "Last second defuse",
+   "at": 1128838330,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o326",
+   "kind": "Hotkey",
+   "parent": "o300",
+   "v": "473cc2de+0",
+   "at": 1128838348,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o327",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Disable sv_pure",
+   "v": "177ab88c+10",
+   "at": 1128838384,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o328",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Rebuy fix",
+   "v": "6ed248e1+10",
+   "at": 1128838484,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o329",
+   "kind": "Checkbox",
+   "parent": "o300",
+   "name": "Draw console output",
+   "v": "52eadf91+10",
+   "at": 1128838520,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o330",
+   "kind": "Button",
+   "parent": "o300",
+   "name": "Steal player name",
+   "cb": "o299",
+   "a3": "0x4337d6ce",
+   "at": 1128838551,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o331",
+   "kind": "Button",
+   "parent": "o300",
+   "name": "Dump MM wins",
+   "cb": "o299",
+   "a3": "0x4334c4e0",
+   "at": 1128838582,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o332",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o299",
+   "name": "Movement",
+   "rect": "0xc000c0c",
+   "a4": "0xd",
+   "a5": "0x1",
+   "at": 1128838639,
+   "children": [
+    "o333",
+    "o334",
+    "o335",
+    "o336",
+    "o337",
+    "o338",
+    "o339",
+    "o340",
+    "o341",
+    "o342",
+    "o343",
+    "o344",
+    "o345",
+    "o346",
+    "o347",
+    "o348",
+    "o349",
+    "o350",
+    "o351",
+    "o352",
+    "o353",
+    "o354"
+   ]
+  },
+  {
+   "id": "o333",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Standalone quick stop",
+   "v": "4cd278ca+10",
+   "at": 1128838685,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o334",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Infinite duck",
+   "v": "d0ca5b87+10",
+   "at": 1128838717,
+   "fields": {
+    "50": {
+     "size": 4,
+     "val": "0xbb82f0f0"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o335",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Easy strafe",
+   "v": "db2172a1+10",
+   "at": 1128838756,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o336",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Bunny hop",
+   "v": "fe3fdaab+10",
+   "at": 1128838788,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o337",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Air strafe",
+   "v": "f2eb89e9+10",
+   "at": 1128838842,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x4336e86c"
+    }
+   ]
+  },
+  {
+   "id": "o338",
+   "kind": "Multi",
+   "parent": "o332",
+   "name": "Air strafe direction",
+   "v": "6f6acc9b+10",
+   "items": [
+    [
+     "View angles",
+     1
+    ],
+    [
+     "Movement keys",
+     2
+    ]
+   ],
+   "at": 1128838890,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o339",
+   "kind": "Slider",
+   "parent": "o332",
+   "name": "Air strafe smoothing",
+   "min": 0,
+   "max": 100,
+   "v": "c94c5f0b+10",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128839007,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o340",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Avoid collisions",
+   "v": "3095c574+10",
+   "at": 1128839057,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o341",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Z-Hop",
+   "v": "3fdf2566+10",
+   "at": 1128839107,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433afc9f"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o342",
+   "kind": "Hotkey",
+   "parent": "o332",
+   "v": "2b499e77+0",
+   "at": 1128839181,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o343",
+   "kind": "Slider",
+   "parent": "o332",
+   "name": "",
+   "min": 100,
+   "max": 300,
+   "v": "3027dc11+10",
+   "unit": 0,
+   "stepRaw": 1036831949,
+   "at": 1128839239,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o344",
+   "kind": "Slider",
+   "parent": "o332",
+   "name": "",
+   "min": 100,
+   "max": 500,
+   "v": "3127de82+10",
+   "unit": 0,
+   "stepRaw": 1036831949,
+   "at": 1128839297,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o345",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Pre-speed",
+   "v": "ca7fc107+10",
+   "at": 1128839343,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o346",
+   "kind": "Hotkey",
+   "parent": "o332",
+   "v": "712c1936+0",
+   "at": 1128839379,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o347",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "No fall damage",
+   "v": "8e38f1f3+10",
+   "at": 1128839425,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o348",
+   "kind": "Color",
+   "parent": "o332",
+   "v": "6e4e5cc7+10",
+   "at": 1128839446,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o349",
+   "kind": "Combo",
+   "parent": "o332",
+   "name": "Air duck",
+   "v": "5b1a5c7f+10",
+   "items": [
+    [
+     "Off",
+     0
+    ],
+    [
+     "On",
+     1
+    ],
+    [
+     "Spam",
+     3
+    ],
+    [
+     "Fake",
+     2
+    ],
+    [
+     "On land",
+     4
+    ]
+   ],
+   "at": 1128839478,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o350",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Blockbot",
+   "v": "b2cdbb7d+10",
+   "at": 1128839621,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o351",
+   "kind": "Hotkey",
+   "parent": "o332",
+   "v": "e2ffccf0+0",
+   "at": 1128839639,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o352",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Jump at edge",
+   "v": "8c13c109+10",
+   "at": 1128839671,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o353",
+   "kind": "Hotkey",
+   "parent": "o332",
+   "v": "5bbb224e+0",
+   "at": 1128839689,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o354",
+   "kind": "Checkbox",
+   "parent": "o332",
+   "name": "Fast walk",
+   "v": "b5e64ad1+10",
+   "at": 1128839721,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o355",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o299",
+   "name": "Settings",
+   "rect": "0xc0c0c0c",
+   "a4": "0x8",
+   "a5": "0x1",
+   "at": 1128839815,
+   "children": [
+    "o356",
+    "o357",
+    "o358",
+    "o359",
+    "o360",
+    "o361",
+    "o362",
+    "o364",
+    "o365",
+    "o366",
+    "o367",
+    "o368",
+    "o369",
+    "o370",
+    "o371",
+    "o372",
+    "o373",
+    "o374",
+    "o375",
+    "o376",
+    "o377"
+   ]
+  },
+  {
+   "id": "o356",
+   "kind": "Label",
+   "parent": "o355",
+   "name": "Menu key",
+   "at": 1128839851,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o357",
+   "kind": "Hotkey",
+   "parent": "o355",
+   "v": "0x43478db8",
+   "a": [
+    "0x43478db8",
+    "0x0"
+   ],
+   "at": 1128839864,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o358",
+   "kind": "Label",
+   "parent": "o355",
+   "name": "Menu color",
+   "at": 1128839888,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o359",
+   "kind": "Color",
+   "parent": "o355",
+   "v": "0x43468fb0",
+   "at": 1128839900,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o360",
+   "kind": "Combo",
+   "parent": "o355",
+   "name": "DPI scale",
+   "v": "0x43475a94",
+   "items": [
+    [
+     "100%",
+     0
+    ],
+    [
+     "125%",
+     1
+    ],
+    [
+     "150%",
+     2
+    ],
+    [
+     "175%",
+     3
+    ],
+    [
+     "200%",
+     4
+    ]
+   ],
+   "at": 1128839923,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x43397071"
+    }
+   ]
+  },
+  {
+   "id": "o361",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Anti-untrusted",
+   "v": "851e6abe+10",
+   "at": 1128840142,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o362",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Allow custom game events",
+   "v": "526a2bf4+10",
+   "at": 1128840176,
+   "fields": {
+    "50": {
+     "size": 4,
+     "val": "0xbb82f0f0"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x43381798"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o364",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Hide from OBS",
+   "v": "643364e6+10",
+   "at": 1128840274,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o365",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Low FPS warning",
+   "v": "740c32ae+10",
+   "at": 1128840310,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o366",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Lock menu layout",
+   "v": "0x43467e4b",
+   "at": 1128840351,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433ed774"
+    }
+   ]
+  },
+  {
+   "id": "o367",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Multithreading",
+   "v": "0x434683fc",
+   "at": 1128840390,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o368",
+   "kind": "Button",
+   "parent": "o355",
+   "name": "Reset menu layout",
+   "cb": "o1",
+   "a3": "0x4340c778",
+   "at": 1128840448,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o369",
+   "kind": "Button",
+   "parent": "o355",
+   "name": "Unload",
+   "cb": "o1",
+   "a3": "0x43343287",
+   "at": 1128840481,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o370",
+   "kind": "Slider",
+   "parent": "o355",
+   "name": "sv_maxunlag2",
+   "min": 200,
+   "max": 1000,
+   "v": "0x43468230",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128840523,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433cce8e"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o371",
+   "kind": "Slider",
+   "parent": "o355",
+   "name": "sv_maxusrcmdprocessticks2",
+   "min": 4,
+   "max": 62,
+   "v": "0x43469274",
+   "unit": 0,
+   "step": 1,
+   "at": 1128840611,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o299",
+     "fn": "0x433ab605"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o372",
+   "kind": "Slider",
+   "parent": "o355",
+   "name": "sv_clockcorrection_msecs2",
+   "min": 0,
+   "max": 1000,
+   "v": "0x43468290",
+   "a5": 1,
+   "unit": 7536749,
+   "step": 1,
+   "at": 1128840720,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o373",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "sv_maxusrcmdprocessticks_holdaim",
+   "v": "0x43468d7c",
+   "at": 1128840764,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o374",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Fix viewmodel lag",
+   "v": "0x4346a328",
+   "at": 1128840808,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o375",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Fix networking",
+   "v": "0x43467cc0",
+   "at": 1128840852,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o376",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Fix animations",
+   "v": "0x4346a527",
+   "at": 1128840902,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o377",
+   "kind": "Checkbox",
+   "parent": "o355",
+   "name": "Faster grenade toss",
+   "v": "0x43467560",
+   "at": 1128840946,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o378",
+   "kind": "Tab",
+   "size": 344,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x43470684"
+    },
+    "98": {
+     "size": 4,
+     "val": "varde88b6dc+0x10"
+    },
+    "100": {
+     "size": 4,
+     "val": "o382"
+    },
+    "104": {
+     "size": 4,
+     "val": "o386"
+    },
+    "108": {
+     "size": 4,
+     "val": "o387"
+    },
+    "110": {
+     "size": 4,
+     "val": "o389"
+    },
+    "114": {
+     "size": 4,
+     "val": "o390"
+    },
+    "118": {
+     "size": 4,
+     "val": "o392"
+    },
+    "120": {
+     "size": 4,
+     "val": "o394"
+    },
+    "124": {
+     "size": 4,
+     "val": "o395"
+    },
+    "128": {
+     "size": 4,
+     "val": "o396"
+    },
+    "130": {
+     "size": 4,
+     "val": "varb6218fec+0x10"
+    },
+    "134": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "e0": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "e4": {
+     "size": 4,
+     "val": "0x3"
+    },
+    "e8": {
+     "size": 2,
+     "val": "0x0"
+    },
+    "ea": {
+     "size": 1,
+     "val": "0x0"
+    },
+    "9c": {
+     "size": 4,
+     "val": "varf6d4d395+0x10"
+    },
+    "a0": {
+     "size": 4,
+     "val": "var588fc522+0x10"
+    },
+    "a4": {
+     "size": 4,
+     "val": "var82097ad3+0x10"
+    },
+    "a8": {
+     "size": 4,
+     "val": "var3a8ef907+0x10"
+    },
+    "ac": {
+     "size": 4,
+     "val": "vare5249ca0+0x10"
+    },
+    "b0": {
+     "size": 4,
+     "val": "var7439e8b5+0x10"
+    },
+    "b4": {
+     "size": 4,
+     "val": "var5101537e+0x10"
+    },
+    "b8": {
+     "size": 4,
+     "val": "vare13f61e0+0x10"
+    },
+    "bc": {
+     "size": 4,
+     "val": "var7cfd0011+0x10"
+    },
+    "c0": {
+     "size": 4,
+     "val": "var191a5a61+0x10"
+    },
+    "c4": {
+     "size": 4,
+     "val": "var6caf4832+0x10"
+    },
+    "c8": {
+     "size": 4,
+     "val": "vard347bc87+0x10"
+    },
+    "cc": {
+     "size": 4,
+     "val": "vard4f2a320+0x10"
+    },
+    "d0": {
+     "size": 4,
+     "val": "vare0bda969+0x10"
+    },
+    "d4": {
+     "size": 4,
+     "val": "varb3c4b6ca+0x10"
+    },
+    "ec": {
+     "size": 4,
+     "val": "o380"
+    },
+    "fc": {
+     "size": 4,
+     "val": "o381"
+    },
+    "f0": {
+     "size": 4,
+     "val": "o383"
+    },
+    "f4": {
+     "size": 4,
+     "val": "o384"
+    },
+    "f8": {
+     "size": 4,
+     "val": "o385"
+    },
+    "10c": {
+     "size": 4,
+     "val": "o388"
+    },
+    "d8": {
+     "size": 4,
+     "val": "o379"
+    },
+    "11c": {
+     "size": 4,
+     "val": "o393"
+    },
+    "12c": {
+     "size": 4,
+     "val": "o398"
+    },
+    "dc": {
+     "size": 4,
+     "val": "o391"
+    }
+   },
+   "events": [],
+   "name": "SKINS",
+   "at": 1128841100,
+   "addedAt": 1128844117,
+   "directCalls": [
+    [
+     "433cd70e",
+     "4348d3f6",
+     []
+    ]
+   ]
+  },
+  {
+   "id": "o379",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o378",
+   "name": "Model options",
+   "rect": "0x18000c00",
+   "a4": "0x0",
+   "a5": "0x0",
+   "at": 1128841543,
+   "children": [
+    "o380",
+    "o381",
+    "o382",
+    "o383",
+    "o384",
+    "o385",
+    "o386",
+    "o387",
+    "o388",
+    "o389",
+    "o390"
+   ]
+  },
+  {
+   "id": "o380",
+   "kind": "Slider",
+   "parent": "o379",
+   "name": "Team",
+   "min": 2,
+   "max": 3,
+   "v": "o378+0xe4",
+   "unit": 0,
+   "step": 1,
+   "at": 1128841588,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433eb2c8"
+    }
+   ]
+  },
+  {
+   "id": "o381",
+   "kind": "Checkbox",
+   "parent": "o379",
+   "name": "Knife changer",
+   "v": "d347bc87+10",
+   "at": 1128841667,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o382+0x4"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x4335ca65"
+    }
+   ]
+  },
+  {
+   "id": "o382",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "e0bda969+10",
+   "items": [
+    [
+     "Bayonet",
+     0
+    ],
+    [
+     "Flip",
+     1
+    ],
+    [
+     "Gut",
+     2
+    ],
+    [
+     "Karambit",
+     3
+    ],
+    [
+     "M9 Bayonet",
+     4
+    ],
+    [
+     "Tactical",
+     5
+    ],
+    [
+     "Butterfly",
+     6
+    ],
+    [
+     "Falchion",
+     7
+    ],
+    [
+     "Shadow dagger",
+     8
+    ],
+    [
+     "Survival bowie",
+     9
+    ],
+    [
+     "Ursus",
+     10
+    ],
+    [
+     "Navaja",
+     11
+    ],
+    [
+     "Stiletto",
+     12
+    ],
+    [
+     "Talon",
+     13
+    ],
+    [
+     "Classic knife",
+     14
+    ],
+    [
+     "Paracord",
+     15
+    ],
+    [
+     "Survival",
+     16
+    ],
+    [
+     "Nomad",
+     17
+    ],
+    [
+     "Skeleton",
+     18
+    ]
+   ],
+   "at": 1128841730,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o381+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o381:116"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433658fa"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o383",
+   "kind": "Checkbox",
+   "parent": "o379",
+   "name": "Glove changer",
+   "v": "3a8ef907+10",
+   "at": 1128842423,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o385+0x4"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433d66b5"
+    }
+   ]
+  },
+  {
+   "id": "o384",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "7439e8b5+10",
+   "items": [],
+   "at": 1128842485,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o385+0x4"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o383:116"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x4333cea9"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o385",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "e13f61e0+10",
+   "items": [],
+   "at": 1128842543,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o383+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "o384+0x4"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433cce8e"
+    }
+   ],
+   "visible": 0
+  },
+  {
+   "id": "o386",
+   "kind": "Checkbox",
+   "parent": "o379",
+   "name": "Mask changer",
+   "v": "de88b6dc+10",
+   "at": 1128842694,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o387+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o387",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "588fc522+10",
+   "items": [
+    [
+     "Hoxton",
+     0
+    ],
+    [
+     "Doll",
+     1
+    ],
+    [
+     "Samurai",
+     3
+    ],
+    [
+     "Clown",
+     4
+    ],
+    [
+     "Wolf",
+     5
+    ],
+    [
+     "Sheep",
+     6
+    ],
+    [
+     "Gold bunny",
+     7
+    ],
+    [
+     "Anaglyph",
+     8
+    ],
+    [
+     "Japanese",
+     9
+    ],
+    [
+     "Dallas",
+     10
+    ],
+    [
+     "Pumpkin",
+     11
+    ],
+    [
+     "Bloody sheep",
+     12
+    ],
+    [
+     "Devil",
+     13
+    ],
+    [
+     "Boar",
+     14
+    ],
+    [
+     "Chains",
+     15
+    ],
+    [
+     "Tiki",
+     16
+    ],
+    [
+     "Bunny",
+     17
+    ],
+    [
+     "Gold sheep",
+     18
+    ],
+    [
+     "Zombie",
+     19
+    ],
+    [
+     "Chicken",
+     20
+    ],
+    [
+     "Gold skull",
+     21
+    ]
+   ],
+   "at": 1128842722,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o386+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o386:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o388",
+   "kind": "Checkbox",
+   "parent": "o379",
+   "name": "Agent changer",
+   "v": "191a5a61+10",
+   "at": 1128843435,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x43384c8d"
+    }
+   ]
+  },
+  {
+   "id": "o389",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "3eb3f20b+10",
+   "items": [],
+   "at": 1128843471,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o390",
+   "kind": "Combo",
+   "parent": "o379",
+   "name": "",
+   "v": "8191d9bc+10",
+   "items": [],
+   "at": 1128843503,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o391",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o378",
+   "name": "Weapon skin",
+   "rect": "0x18000c0c",
+   "a4": "0xe",
+   "a5": "0x0",
+   "at": 1128843646,
+   "children": [
+    "o392",
+    "o393",
+    "o394",
+    "o395",
+    "o396",
+    "o397",
+    "o398"
+   ]
+  },
+  {
+   "id": "o392",
+   "kind": "Slider",
+   "parent": "o391",
+   "name": "Weapon",
+   "min": 0,
+   "max": 1000,
+   "v": "o378+0xe0",
+   "unit": 0,
+   "step": 1,
+   "at": 1128843693,
+   "fields": {},
+   "events": [],
+   "visible": 0,
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x4332cc0c"
+    }
+   ]
+  },
+  {
+   "id": "o393",
+   "kind": "Checkbox",
+   "parent": "o391",
+   "name": "Enabled",
+   "v": "b6218fec+10",
+   "at": 1128843772,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433e10cc"
+    }
+   ]
+  },
+  {
+   "id": "o394",
+   "kind": "Checkbox",
+   "parent": "o391",
+   "name": "StatTrak",
+   "v": "b6218fec+11",
+   "at": 1128843842,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o395",
+   "kind": "Slider",
+   "parent": "o391",
+   "name": "Quality",
+   "min": 0,
+   "max": 100,
+   "v": "b6218fec+14",
+   "a5": 1,
+   "unit": 37,
+   "step": 1,
+   "at": 1128843887,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o396",
+   "kind": "Slider",
+   "parent": "o391",
+   "name": "Seed",
+   "min": 0,
+   "max": 1000,
+   "v": "b6218fec+18",
+   "unit": 0,
+   "step": 1,
+   "at": 1128843933,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o397",
+   "kind": "Checkbox",
+   "parent": "o391",
+   "name": "Filter by weapon",
+   "v": "9ab5333c+10",
+   "at": 1128843975,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x433fd925"
+    }
+   ]
+  },
+  {
+   "id": "o398",
+   "kind": "Listbox",
+   "parent": "o391",
+   "name": "Skin",
+   "a": [
+    "varb6218fec+0x1c",
+    "0x9e",
+    "0x142"
+   ],
+   "at": 1128844051,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o378",
+     "fn": "0x43406ed3"
+    }
+   ]
+  },
+  {
+   "id": "o399",
+   "kind": "Tab",
+   "size": 216,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x43471fcc"
+    },
+    "98": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "a4": {
+     "size": 4,
+     "val": "o401"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o402"
+    },
+    "9c": {
+     "size": 4,
+     "val": "o400"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o404"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o405"
+    },
+    "b4": {
+     "size": 4,
+     "val": "o406"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o407"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o408"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o409"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o410"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o411"
+    },
+    "cc": {
+     "size": 4,
+     "val": "o412"
+    },
+    "d0": {
+     "size": 4,
+     "val": "o413"
+    },
+    "d4": {
+     "size": 4,
+     "val": "o414"
+    },
+    "a0": {
+     "size": 4,
+     "val": "o403"
+    }
+   },
+   "events": [],
+   "name": "PLAYERS",
+   "at": 1128844174,
+   "addedAt": 1128845109
+  },
+  {
+   "id": "o400",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o399",
+   "name": "Players",
+   "rect": "0x18000c00",
+   "a4": "0x0",
+   "a5": "0x1",
+   "at": 1128844236,
+   "children": [
+    "o401",
+    "o402"
+   ]
+  },
+  {
+   "id": "o401",
+   "kind": "Listbox",
+   "parent": "o400",
+   "name": "Player list",
+   "a": [
+    "o399+0x98",
+    "0x0",
+    "0x9e",
+    "0x1a9"
+   ],
+   "at": 1128844286,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o399",
+     "fn": "0x4336b1d5"
+    }
+   ]
+  },
+  {
+   "id": "o402",
+   "kind": "Button",
+   "parent": "o400",
+   "name": "Reset all",
+   "cb": "o399",
+   "a3": "0x4337f167",
+   "at": 1128844357,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o403",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o399",
+   "name": "Adjustments",
+   "rect": "0x18000c0c",
+   "a4": "0xd",
+   "a5": "0x1",
+   "at": 1128844444,
+   "children": [
+    "o404",
+    "o405",
+    "o406",
+    "o407",
+    "o408",
+    "o409",
+    "o410",
+    "o411",
+    "o412",
+    "o413",
+    "o414",
+    "o415"
+   ]
+  },
+  {
+   "id": "o404",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Add to whitelist",
+   "v": null,
+   "at": 1128844480,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o405",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Allow shared ESP updates",
+   "v": null,
+   "at": 1128844504,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o406",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Disable visuals",
+   "v": null,
+   "at": 1128844528,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o407",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "High priority",
+   "v": null,
+   "at": 1128844552,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o408",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Force pitch",
+   "v": null,
+   "at": 1128844576,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o409+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o409",
+   "kind": "Slider",
+   "parent": "o403",
+   "name": "Force pitch value",
+   "min": -90,
+   "max": 90,
+   "v": null,
+   "unit": 176,
+   "step": 1,
+   "at": 1128844612,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o408+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o408:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o410",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Force body yaw",
+   "v": null,
+   "at": 1128844675,
+   "fields": {
+    "74": {
+     "size": 4,
+     "val": "o411+0x4"
+    }
+   },
+   "events": []
+  },
+  {
+   "id": "o411",
+   "kind": "Slider",
+   "parent": "o403",
+   "name": "Force body yaw value",
+   "min": -60,
+   "max": 60,
+   "v": null,
+   "unit": 176,
+   "step": 1,
+   "at": 1128844711,
+   "fields": {
+    "4": {
+     "size": 4,
+     "val": "o410+0x70"
+    },
+    "8": {
+     "size": 4,
+     "val": "?o410:116"
+    }
+   },
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o412",
+   "kind": "Checkbox",
+   "parent": "o403",
+   "name": "Correction active",
+   "v": null,
+   "at": 1128844774,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o413",
+   "kind": "Combo",
+   "parent": "o403",
+   "name": "Override prefer body aim",
+   "v": null,
+   "items": [
+    [
+     "-",
+     0
+    ],
+    [
+     "Off",
+     1
+    ],
+    [
+     "On",
+     2
+    ],
+    [
+     "Force",
+     3
+    ]
+   ],
+   "at": 1128844798,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o414",
+   "kind": "Combo",
+   "parent": "o403",
+   "name": "Override safe point",
+   "v": null,
+   "items": [
+    [
+     "-",
+     0
+    ],
+    [
+     "Off",
+     1
+    ],
+    [
+     "On",
+     2
+    ]
+   ],
+   "at": 1128844947,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o415",
+   "kind": "Button",
+   "parent": "o403",
+   "name": "Apply to all",
+   "cb": "o399",
+   "a3": "0x4336bc51",
+   "at": 1128845087,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o416",
+   "kind": "Tab",
+   "size": 212,
+   "fields": {
+    "0": {
+     "size": 4,
+     "val": "0x4346f6dc"
+    },
+    "98": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "9c": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "a0": {
+     "size": 4,
+     "val": "0x0"
+    },
+    "b0": {
+     "size": 4,
+     "val": "o418"
+    },
+    "b4": {
+     "size": 4,
+     "val": "o419"
+    },
+    "b8": {
+     "size": 4,
+     "val": "o420"
+    },
+    "a8": {
+     "size": 4,
+     "val": "o417"
+    },
+    "bc": {
+     "size": 4,
+     "val": "o428"
+    },
+    "c0": {
+     "size": 4,
+     "val": "o431"
+    },
+    "c4": {
+     "size": 4,
+     "val": "o432"
+    },
+    "d0": {
+     "size": 4,
+     "val": "o433"
+    },
+    "c8": {
+     "size": 4,
+     "val": "o434"
+    },
+    "cc": {
+     "size": 4,
+     "val": "o435"
+    },
+    "ac": {
+     "size": 4,
+     "val": "o427"
+    }
+   },
+   "events": [],
+   "name": "CONFIG",
+   "at": 1128845163,
+   "directCalls": [
+    [
+     "4335c747",
+     "4348d2ff",
+     []
+    ]
+   ],
+   "addedAt": 1128846097
+  },
+  {
+   "id": "o417",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o416",
+   "name": "Presets",
+   "rect": "0x18000c00",
+   "a4": "0x8",
+   "a5": "0x1",
+   "at": 1128845238,
+   "children": [
+    "o418",
+    "o419",
+    "o420",
+    "o421",
+    "o422",
+    "o423",
+    "o424",
+    "o425",
+    "o426"
+   ]
+  },
+  {
+   "id": "o418",
+   "kind": "Listbox",
+   "parent": "o417",
+   "name": "Presets",
+   "a": [
+    "0x0",
+    "0x0",
+    "0x9e",
+    "0x7e"
+   ],
+   "at": 1128845286,
+   "fields": {
+    "14": {
+     "size": 1,
+     "val": "0x1"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o416",
+     "fn": "0x4332b5a9"
+    }
+   ]
+  },
+  {
+   "id": "o419",
+   "kind": "Hotkey",
+   "parent": "o417",
+   "v": null,
+   "at": 1128845351,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o420",
+   "kind": "Textbox",
+   "parent": "o417",
+   "at": 1128845373,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o421",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Load",
+   "cb": "o416",
+   "a3": "0x4333c78e",
+   "at": 1128845410,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o422",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Save",
+   "cb": "o416",
+   "a3": "0x4331e2fe",
+   "at": 1128845441,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o423",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Delete",
+   "cb": "o416",
+   "a3": "0x433fca71",
+   "at": 1128845472,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o424",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Reset",
+   "cb": "o416",
+   "a3": "0x434019ea",
+   "at": 1128845503,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o425",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Import from clipboard",
+   "cb": "o416",
+   "a3": "0x4334da49",
+   "at": 1128845534,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o426",
+   "kind": "Button",
+   "parent": "o417",
+   "name": "Export to clipboard",
+   "cb": "o416",
+   "a3": "0x4339e613",
+   "at": 1128845565,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o427",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o416",
+   "name": "Lua",
+   "rect": "0x18000c0c",
+   "a4": "0x8",
+   "at": 1128845637,
+   "children": [
+    "o428",
+    "o429",
+    "o430",
+    "o431",
+    "o432",
+    "o433",
+    "o434",
+    "o435"
+   ]
+  },
+  {
+   "id": "o428",
+   "kind": "Checkbox",
+   "parent": "o427",
+   "name": "Enabled",
+   "v": "0x434675d4",
+   "at": 1128845674,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o416",
+     "fn": "0x433b3860"
+    }
+   ]
+  },
+  {
+   "id": "o429",
+   "kind": "Checkbox",
+   "parent": "o427",
+   "name": "Allow unsafe scripts",
+   "v": "0x43475798",
+   "at": 1128845755,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o416",
+     "fn": "0x43368df4"
+    }
+   ]
+  },
+  {
+   "id": "o430",
+   "kind": "Button",
+   "parent": "o427",
+   "name": "Reload active scripts",
+   "cb": "o416",
+   "a3": "0x43359bc3",
+   "at": 1128845802,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o431",
+   "kind": "Listbox",
+   "parent": "o427",
+   "name": "Scripts",
+   "a": [
+    "0x0",
+    "0x1",
+    "0x9e",
+    "0x7e"
+   ],
+   "at": 1128845839,
+   "fields": {
+    "14": {
+     "size": 1,
+     "val": "0x1"
+    }
+   },
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o416",
+     "fn": "0x433e1d52"
+    }
+   ]
+  },
+  {
+   "id": "o432",
+   "kind": "Label",
+   "parent": "o427",
+   "name": " ",
+   "at": 1128845911,
+   "fields": {},
+   "events": []
+  },
+  {
+   "id": "o433",
+   "kind": "Checkbox",
+   "parent": "o427",
+   "name": "Load on startup",
+   "v": null,
+   "at": 1128845936,
+   "fields": {},
+   "events": [],
+   "callbacks": [
+    {
+     "ctx": "o416",
+     "fn": "0x433a0148"
+    }
+   ]
+  },
+  {
+   "id": "o434",
+   "kind": "Button",
+   "parent": "o427",
+   "name": "Load script",
+   "cb": "o416",
+   "a3": "0x43406f35",
+   "at": 1128846007,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o435",
+   "kind": "Button",
+   "parent": "o427",
+   "name": "Unload script",
+   "cb": "o416",
+   "a3": "0x4340b285",
+   "at": 1128846052,
+   "fields": {},
+   "events": [],
+   "visible": 0
+  },
+  {
+   "id": "o436",
+   "kind": "Tab",
+   "size": 152,
+   "fields": {},
+   "events": [],
+   "name": "Lua",
+   "at": 1128846143,
+   "addedAt": 1128846155,
+   "visible": 0
+  },
+  {
+   "id": "o437",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o436",
+   "name": "A",
+   "rect": "0x18000c00",
+   "a4": "0x0",
+   "a5": "0x1",
+   "at": 1128846218
+  },
+  {
+   "id": "o438",
+   "kind": "Child",
+   "size": 200,
+   "fields": {},
+   "events": [],
+   "tab": "o436",
+   "name": "B",
+   "rect": "0x18000c0c",
+   "a4": "0x0",
+   "a5": "0x1",
+   "at": 1128846291
+  }
+ ],
+ "log": [
+  [
+   "call",
+   "433b8aa6",
+   "43487081",
+   "ecx=o1+0x54",
+   "edx=0x0",
+   "0x9"
+  ],
+  [
+   "call",
+   "433ef999",
+   "43487ff2",
+   "ecx=o1+0x68",
+   "edx=clob",
+   "stk+0xfff5c",
+   "?stk:1047820",
+   "stk+0xffd38",
+   "stk+0xffd34"
+  ],
+  [
+   "call",
+   "433f1163",
+   "4348a2cc",
+   "ecx=stk+0xffd18",
+   "edx=clob"
+  ],
+  [
+   "call",
+   "433f195c",
+   "4348ba50",
+   "ecx=stk+0xfff64",
+   "edx=clob"
+  ],
+  [
+   "call",
+   "4339f3a5",
+   "4348bf40",
+   "ecx=stk+0xfff64",
+   "edx=clob"
+  ],
+  [
+   "call",
+   "4331eca4",
+   "4348bfe1",
+   "ecx=o378+0x138",
+   "edx=clob",
+   "0x0",
+   "stk+0xffd33",
+   "stk+0xffd32",
+   "stk+0xffd31",
+   "stk+0xffd30",
+   "stk+0xffd2f",
+   "stk+0xffd2e"
+  ],
+  [
+   "call",
+   "NaN",
+   "4348d403",
+   "ecx=o436",
+   "edx=clob"
+  ]
+ ]
+}
